@@ -87,7 +87,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #121F28;
+		background: #2e3842;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -150,7 +150,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #fff;
 		font-weight: 600;
 	}
 
@@ -1835,7 +1835,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background-color: #121F28;
+		background-color: rgba(144, 144, 144, 0.25);
 		border-radius: 3px;
 		border: none;
 		color: inherit;
@@ -1859,7 +1859,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: 0 0 0 2px #000000;
+			box-shadow: 0 0 0 2px #21b2a6;
 		}
 
 	select {
@@ -2487,7 +2487,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #B51E61;
+			background-color: #ed4933;
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2497,7 +2497,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #B51E61 !important;
+				background-color: #ef5e4a !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2505,7 +2505,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #B51E61 !important;
+				background-color: #eb341c !important;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2604,7 +2604,7 @@ input, select, textarea {
 
 			.features li:before {
 				display: block;
-				color: #000000;
+				color: #00ffcc;
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
@@ -2703,15 +2703,15 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: #121F28;
+			background-color: rgba(0, 0, 0, 0.075);
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: #121F28;
+			background-color: rgba(0, 0, 0, 0.15);
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: #121F28;
+			background-color: rgba(0, 0, 0, 0.225);
 		}
 
 		.spotlight:nth-child(4) {
@@ -2817,8 +2817,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #ffffff;
-			color: #B51E61;
+			background-color: #21b2a6;
+			color: #c8ece9;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -2826,7 +2826,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
-				color: #B51E61;
+				color: #ffffff;
 			}
 
 			.wrapper.style1 hr {
@@ -2850,7 +2850,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 header.major p {
-				color: #B51E61;
+				color: #c8ece9;
 			}
 
 			.wrapper.style1 label {
@@ -2871,7 +2871,7 @@ input, select, textarea {
 
 				.wrapper.style1 select option {
 					color: #ffffff;
-					background: #B51E61;
+					background: #21b2a6;
 				}
 
 			.wrapper.style1 input[type="checkbox"] + label,
@@ -2976,11 +2976,11 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background-color: #121F28;
+			background-color: #2e3842;
 		}
 
 		.wrapper.style3 {
-			background-color: #B51E61;
+			background-color: #505393;
 			color: #d3d4e4;
 		}
 
@@ -3144,15 +3144,15 @@ input, select, textarea {
 
 		.wrapper.style5 {
 			background-color: #ffffff;
-			color: #121F28;
+			color: #4E4852;
 		}
 
 			.wrapper.style5 strong, .wrapper.style5 b {
-				color: #121F28;
+				color: #2E3842;
 			}
 
 			.wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
-				color: #121F28;
+				color: #2E3842;
 			}
 
 			.wrapper.style5 hr {
@@ -3168,11 +3168,11 @@ input, select, textarea {
 			}
 
 			.wrapper.style5 header p {
-				color: #121F28;
+				color: #8E8892;
 			}
 
 			.wrapper.style5 header.major h2, .wrapper.style5 header.major h3, .wrapper.style5 header.major h4, .wrapper.style5 header.major h5, .wrapper.style5 header.major h6 {
-				border-color: #121F28;
+				border-color: #dfdfdf;
 			}
 
 			.wrapper.style5 header.major p {
@@ -3329,7 +3329,7 @@ input, select, textarea {
 	}
 
 		#page-wrapper:before {
-			background: #121F28;
+			background: rgba(0, 0, 0, 0);
 			content: '';
 			display: block;
 			display: none;
@@ -3351,7 +3351,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #B51E61;
+		background: #21b2a6;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -3445,7 +3445,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #121F28;
+		background: #2e3842;
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -3694,7 +3694,7 @@ input, select, textarea {
 			-ms-transition-delay: 1.25s;
 			transition-delay: 1.25s;
 			content: '';
-			background: #B51E61;
+			background: #2e3842;
 			display: block;
 			width: 100%;
 			height: 100%;
@@ -3963,17 +3963,17 @@ input, select, textarea {
 
 /* Landing */
 
-	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/498AA9DB-2CD5-49A4-8FC6-B54B50223BF1_1_105_c.jpeg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/498AA9DB-2CD5-49A4-8FC6-B54B50223BF1_1_105_c.jpeg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/498AA9DB-2CD5-49A4-8FC6-B54B50223BF1_1_105_c.jpeg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/498AA9DB-2CD5-49A4-8FC6-B54B50223BF1_1_105_c.jpeg");
-		background-attachment: fixed;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		padding-top: 0;
-	}
+body.landing #page-wrapper {
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/498AA9DB-2CD5-49A4-8FC6-B54B50223BF1_1_105_c.jpeg");
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/498AA9DB-2CD5-49A4-8FC6-B54B50223BF1_1_105_c.jpeg");
+	background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/498AA9DB-2CD5-49A4-8FC6-B54B50223BF1_1_105_c.jpeg");
+	background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/498AA9DB-2CD5-49A4-8FC6-B54B50223BF1_1_105_c.jpeg");
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 0;
+}
 
 	body.landing #footer {
 		background-color: rgba(29, 36, 42, 0.9);
@@ -3994,6 +3994,7 @@ input, select, textarea {
 		background-size: cover;
 	}
 
+
 	body.is-mobile.landing #footer {
-		background-color: #121F28;
+		background-color: #1d242a;
 	}
