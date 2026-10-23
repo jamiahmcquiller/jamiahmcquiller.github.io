@@ -1,287 +1,436 @@
+
 <!DOCTYPE HTML>
-
-<html>
-
+<html lang="en">
 <head>
-	<title>Home | Jamiah McQuiller</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+    <title>Home | Jamiah McQuiller</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Jamiah McQuiller's cybersecurity portfolio featuring vulnerability remediation, security risk assessments, security documentation, application security, and network security." />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+        /* Consistent project image sizing */
+        #projects .posts article .project-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 220px;
+            padding: 1.5rem;
+            overflow: hidden;
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+        }
+
+        #projects .posts article .project-image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        /* CryptKey: remove the surrounding border */
+        #projects .posts article .project-image.cryptkey-logo {
+            background: #ffffff;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 1rem;
+        }
+
+        #projects .posts article .project-image.cryptkey-logo img {
+            width: 100%;
+            max-width: 260px;
+            height: 100%;
+            object-fit: contain;
+            border: none;
+            box-shadow: none;
+        }
+
+        @media screen and (max-width: 736px) {
+            #projects .posts article .project-image {
+                height: 190px;
+            }
+        }
+    </style>
 </head>
 
 <body class="is-preload">
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+<div id="wrapper">
 
-		<!-- Main -->
-		<div id="main">
-			<div class="inner">
+    <!-- Main Content -->
+    <div id="main">
+        <div class="inner">
 
-				<!-- Header -->
-				<header id="header">
-					<a href="index.html" class="logo"><strong>Jamiah</strong> McQuiller</a>
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo">
+                     <strong>Jamiah McQuiller</strong> | Cybersecurity Portfolio
+                </a>
 
-					<ul class="icons">
-						<!-- LinkedIn -->
-						<li>
-							<a href="https://www.linkedin.com/in/jamiahmcquiller/" class="icon brands fa-linkedin"
-								target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-								<span class="label">LinkedIn</span>
-							</a>
-						</li>
+                <ul class="icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/jamiahmcquiller/"
+                           class="icon brands fa-linkedin"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="LinkedIn">
+                            <span class="label">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jamiahmcquiller"
+                           class="icon brands fa-github"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+                            <span class="label">GitHub</span>
+                        </a>
+                    </li>
+                </ul>
+            </header>
 
-						<!-- GitHub -->
-						<li>
-							<a href="https://github.com/jamiahmcquiller" class="icon brands fa-github" target="_blank"
-								rel="noopener noreferrer" aria-label="GitHub">
-								<span class="label">GitHub</span>
-							</a>
-						</li>
-				</header>
+            <!-- Introduction -->
+            <section id="banner">
+                <div class="content">
+                    <header>
+                        <h1>Hi, I’m Jamiah McQuiller</h1>
+                        <p>Cybersecurity &amp; Vulnerability Management</p>
+                    </header>
 
-				<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<header>
-							<h1>Hi, I’m Jamiah McQuiller</h1>
-							<p>Cybersecurity & Vulnerability Management</p>
-						</header>
-						<p>I’m a cybersecurity professional focused on vulnerability remediation, endpoint security,
-							risk assessment, and security documentation. I combine hands-on IT experience with
-							security-focused problem-solving to help organizations reduce risk, strengthen endpoint
-							protection, and improve security practices.</p>
-						<ul class="actions">
-							<li><a href="#projects" class="button big">Explore My Work</a></li>
-						</ul>
-					</div>
-					<span class="image object">
-						<img src="images/headshot.jpg" alt="" />
-					</span>
-				</section>
+                    <p>
+                        I’m a cybersecurity professional focused on vulnerability
+                        remediation, endpoint security, risk assessment, and security
+                        documentation. I combine hands-on IT experience with
+                        security-focused problem-solving to help organizations reduce
+                        risk, strengthen endpoint protection, and improve security
+                        practices.
+                    </p>
 
+                    <ul class="actions">
+                        <li>
+                            <a href="#projects" class="button big">Explore My Work</a>
+                        </li>
+                    </ul>
+                </div>
 
-				<!-- Section -->
-				<section>
-					<header class="major">
-						<h2>Areas of Expertise</h2>
-					</header>
-					<div class="features">
-						<article>
-							<span class="icon solid fa-bug"></span>
-							<div class="content">
-								<h3>Vulnerability Management</h3>
-								<p>Identifying vulnerabilities, prioritizing remediation, coordinating patch deployment,
-									and validating
-									remediation progress across managed endpoints.</p>
-							</div>
-						</article>
+                <span class="image object">
+                    <img src="images/headshot.jpg" alt="Jamiah McQuiller" />
+                </span>
+            </section>
 
-						<article>
-							<span class="icon solid fa-shield-alt"></span>
-							<div class="content">
-								<h3>Endpoint Security</h3>
-								<p>Managing endpoint updates and patch deployment workflows to improve device security
-									while minimizing
-									disruption to business operations.</p>
-							</div>
-						</article>
+            <!-- Areas of Expertise -->
+            <section>
+                <header class="major">
+                    <h2>Areas of Expertise</h2>
+                </header>
 
-						<article>
-							<span class="icon solid fa-clipboard-check"></span>
-							<div class="content">
-								<h3>Security Risk Assessments</h3>
-								<p>Evaluating business requirements, data sensitivity, security implications, and
-									potential risks to
-									support informed security decisions.</p>
-							</div>
-						</article>
+                <div class="features">
 
-						<article>
-							<span class="icon solid fa-file-alt"></span>
-							<div class="content">
-								<h3>Security Documentation</h3>
-								<p>Developing standard operating procedures, policies, standards, and repeatable
-									workflows that support
-									security and compliance activities.</p>
-							</div>
-						</article>
+                    <article>
+                        <span class="icon solid fa-bug"></span>
+                        <div class="content">
+                            <h3>Vulnerability Management</h3>
+                            <p>
+                                Identifying vulnerabilities, prioritizing remediation,
+                                coordinating patch deployment, and validating remediation
+                                progress across managed endpoints.
+                            </p>
+                        </div>
+                    </article>
 
-						<article>
-							<span class="icon solid fa-network-wired"></span>
-							<div class="content">
-								<h3>Networking &amp; Security Tools</h3>
-								<p>Applying networking fundamentals, security concepts, and diagnostic tools to
-									investigate technical
-									issues and support secure environments.</p>
-							</div>
-						</article>
+                    <article>
+                        <span class="icon solid fa-shield-alt"></span>
+                        <div class="content">
+                            <h3>Endpoint Security</h3>
+                            <p>
+                                Managing endpoint updates and patch deployment workflows
+                                to improve device security while minimizing disruption
+                                to business operations.
+                            </p>
+                        </div>
+                    </article>
 
-						<article>
-							<span class="icon solid fa-code"></span>
-							<div class="content">
-								<h3>Scripting &amp; Security Automation</h3>
-								<p>Using programming and automation concepts to improve workflows, support technical
-									problem-solving,
-									and develop security-focused applications.</p>
-							</div>
-						</article>
-					</div>
-				</section>
+                    <article>
+                        <span class="icon solid fa-clipboard-check"></span>
+                        <div class="content">
+                            <h3>Security Risk Assessments</h3>
+                            <p>
+                                Evaluating business requirements, data sensitivity,
+                                security implications, and potential risks to support
+                                informed security decisions.
+                            </p>
+                        </div>
+                    </article>
 
+                    <article>
+                        <span class="icon solid fa-file-alt"></span>
+                        <div class="content">
+                            <h3>Security Documentation</h3>
+                            <p>
+                                Developing standard operating procedures, policies,
+                                standards, and repeatable workflows that support
+                                security and compliance activities.
+                            </p>
+                        </div>
+                    </article>
 
-				<!-- Projects -->
-				<section id="projects">
-					<header class="major">
-						<h2>Featured Security Projects</h2>
-					</header>
+                    <article>
+                        <span class="icon solid fa-network-wired"></span>
+                        <div class="content">
+                            <h3>Networking &amp; Security Tools</h3>
+                            <p>
+                                Applying networking fundamentals, security concepts,
+                                and diagnostic tools to investigate technical issues
+                                and support secure environments.
+                            </p>
+                        </div>
+                    </article>
 
-					<div class="posts">
+                    <article>
+                        <span class="icon solid fa-code"></span>
+                        <div class="content">
+                            <h3>Scripting &amp; Security Automation</h3>
+                            <p>
+                                Using programming and automation concepts to improve
+                                workflows, support technical problem-solving, and
+                                develop security-focused applications.
+                            </p>
+                        </div>
+                    </article>
 
-						<!-- Project 1 -->
-						<article>
-							<a href="#" class="image"><img src="images/2f3d25b0-dffc-4508-9c8a-1f233e5720c8.jpg"
-									alt="Vulnerability management and patch remediation" /></a>
-							<h3>Enterprise Vulnerability Remediation</h3>
-							<p>Supported vulnerability remediation and endpoint patch
-								management by organizing deployments, coordinating testing,
-								scheduling maintenance windows, and reviewing remediation
-								results using ManageEngine Endpoint Central.</p>
-							<ul class="actions">
-								<li><a href="projects/vulnerability-remediation.html" class="button">Case Study</a></li>
-							</ul>
-						</article>
-						<!-- Project 2 -->
-						<article>
-							<a href="#" class="image"><img src="images/pic02.jpg"
-									alt="Cybersecurity risk assessment and risk matrix" /></a>
-							<h3>Security Risk Assessment &amp; USB Exceptions</h3>
-							<p>Evaluated business justifications, data sensitivity,
-								data transfer methods, and potential risks to support
-								informed decisions about removable-media exception requests.</p>
-							<ul class="actions">
-								<li><a href="projects/security-risk-assessment.html" class="button">Case Study</a></li>
-							</ul>
-						</article>
+                </div>
+            </section>
 
-						<!-- Project 3 -->
-						<article>
-							<a href="#" class="image"><img src="images/pic03.jpg"
-									alt="Security procedures and policy documentation" /></a>
-							<h3>Security SOPs &amp; Policy Development</h3>
-							<p>Developed structured security documentation, including
-								standard operating procedures, policies, standards, and
-								repeatable workflows to support consistent security practices.</p>
-							<ul class="actions">
-								<li><a href="projects/security-sops-policy-development.html" class="button">View
-										Documentation</a></li>
-							</ul>
-						</article>
+            <!-- Featured Projects -->
+            <section id="projects">
+                <header class="major">
+                    <h2>Featured Projects</h2>
+                </header>
 
-						<!-- Project 4 -->
-						<article>
-							<a href="#" class="image"><img src="images/pic05.jpg"
-									alt="CryptKey authentication application" /></a>
-							<h3>CryptKey — MFA Application</h3>
-							<p>Built a security-focused application using Python and Flask
-								to explore authentication workflows and multi-factor
-								authentication concepts. Document implementation details,
-								testing, and known limitations.</p>
-							<ul class="actions">
-								<li><a href="projects/cryptkey-mfa-application.html" class="button">View Project</a>
-								</li>
-							</ul>
-						</article>
+                <div class="posts">
 
-						<!-- Project 5 -->
-						<article>
-							<a href="#" class="image"><img src="images/pic06.jpg"
-									alt="Network security monitoring and analysis" /></a>
-							<h3>Network Security &amp; Traffic Analysis</h3>
-							<p>Showcase hands-on networking and security analysis using
-								tools such as Wireshark, Nmap, and other security utilities.
-								Include your lab objectives, methodology, findings, and
-								defensive recommendations.</p>
-							<ul class="actions">
-								<li><a href="projects/network-security.html" class="button">View Lab</a></li>
-							</ul>
-						</article>
+                    <!-- Project 1: Vulnerability Remediation -->
+                    <article>
+                        <a href="projects/vulnerability-remediation.html"
+                           class="image">
+                            <img src="images/2f3d25b0-dffc-4508-9c8a-1f233e5720c8.jpg"
+                                 alt="Enterprise vulnerability remediation workstation" />
+                        </a>
 
-						<!-- Project 6 -->
-						<article>
-							<a href="#" class="image"><img src="images/pic06.jpg"
-									alt="Security controls and compliance workflow" /></a>
-							<h3>Security Controls &amp; Compliance</h3>
-							<p>Demonstrate your understanding of security controls,
-								documentation, and compliance workflows through a
-								sanitized example of control mapping, evidence planning,
-								and remediation tracking.</p>
-							<ul class="actions">
-								<li><a href="projects/security-compliance.html" class="button">View Project</a></li>
-							</ul>
-						</article>
-					</div>
-				</section>
+                        <h3>Enterprise Vulnerability Remediation</h3>
 
-			</div>
-		</div>
+                        <p>
+                            Supported vulnerability remediation and endpoint patch
+                            management by organizing deployments, coordinating testing,
+                            scheduling maintenance windows, and reviewing remediation
+                            results using ManageEngine Endpoint Central.
+                        </p>
 
-		<!-- Sidebar -->
-		<div id="sidebar">
-			<div class="inner">
+                        <ul class="actions">
+                            <li>
+                                <a href="projects/vulnerability-remediation.html"
+                                   class="button">Case Study</a>
+                            </li>
+                        </ul>
+                    </article>
 
-				<!-- Search -->
-				<section id="search" class="alt">
-					<form method="post" action="#">
-						<input type="text" name="query" id="query" placeholder="Search" />
-					</form>
-				</section>
+                    <!-- Project 2: Risk Assessment -->
+                    <article>
+                        <a href="projects/security-risk-assessment.html"
+                           class="image">
+                            <img src="images/pic02.jpg"
+                                 alt="Security risk assessment and removable-media exception review" />
+                        </a>
 
-				<!-- Menu -->
-				<nav id="menu">
-					<header class="major">
-						<h2>Menu</h2>
-					</header>
-					<ul>
-						<li><a href="index.html">Homepage</a></li>
-						<li><a href="about.html">About Me</a></li>
-						<li><a href="index.html#projects">Featured Projects</a></li>
-						<li>
-							<span class="opener">Security Projects</span>
-							<ul>
+                        <h3>Security Risk Assessment &amp; USB Exceptions</h3>
+
+                        <p>
+                            Evaluated business justifications, data sensitivity,
+                            data transfer methods, and potential risks to support
+                            informed decisions about removable-media exception requests.
+                        </p>
+
+                        <ul class="actions">
+                            <li>
+                                <a href="projects/security-risk-assessment.html"
+                                   class="button">Case Study</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Project 3: Security Documentation -->
+                    <article>
+                        <a href="projects/security-sops-policy-development.html"
+                           class="image">
+                            <img src="images/pic03.jpg"
+                                 alt="Security procedures and policy documentation" />
+                        </a>
+
+                        <h3>Security SOPs &amp; Policy Development</h3>
+
+                        <p>
+                            Developed structured security documentation, including
+                            standard operating procedures, policies, standards, and
+                            repeatable workflows to support consistent security practices.
+                        </p>
+
+                        <ul class="actions">
+                            <li>
+                                <a href="projects/security-sops-policy-development.html"
+                                   class="button">View Documentation</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Project 4: Security Compliance -->
+                    <article>
+                        <a href="projects/security-compliance.html" class="image">
+                            <img src="images/pic06.jpg"
+                                 alt="Security controls and compliance workflow" />
+                        </a>
+
+                        <h3>Security Controls &amp; Compliance</h3>
+
+                        <p>
+                            Demonstrate knowledge of security controls, documentation,
+                            and compliance workflows through sanitized examples of
+                            control mapping, evidence planning, and remediation tracking.
+                        </p>
+
+                        <ul class="actions">
+                            <li>
+                                <a href="projects/security-compliance.html"
+                                   class="button">View Project</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Project 5: CryptKey -->
+                    <article>
+                        <a href="projects/cryptkey-mfa-application.html"
+                           class="image project-image cryptkey-logo">
+                            <img src="images/cryptkey-logo.png"
+                                 alt="CryptKey multi-factor authentication application logo" />
+                        </a>
+
+                        <h3>CryptKey — MFA Application</h3>
+
+                        <p>
+                            Built a security-focused application using Python and Flask
+                            to explore authentication workflows, time-based one-time
+                            passwords, QR-code scanning, and multi-factor authentication.
+                        </p>
+
+                        <ul class="actions">
+                            <li>
+                                <a href="projects/cryptkey-mfa-application.html"
+                                   class="button">View Project</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Project 6: Network Security -->
+                    <article>
+                        <a href="projects/network-security.html" class="image">
+                            <img src="images/pic05.jpg"
+                                 alt="Network security and traffic analysis" />
+                        </a>
+
+                        <h3>Network Security &amp; Security Labs</h3>
+
+                        <p>
+                            Showcase hands-on networking and security analysis using
+                            tools such as Wireshark, Nmap, and other security utilities,
+                            alongside academic labs and TryHackMe learning.
+                        </p>
+
+                        <ul class="actions">
+                            <li>
+                                <a href="projects/network-security.html"
+                                   class="button">View Lab</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="inner">
+
+            <!-- Search -->
+            <section id="search" class="alt">
+                <form method="get" action="#">
+                    <input type="text" name="query" id="query" placeholder="Search" />
+                </form>
+            </section>
+
+            <!-- Navigation -->
+            <nav id="menu">
+                <header class="major">
+                    <h2>Menu</h2>
+                </header>
+
+                <ul>
+                    <li>
+                        <a href="index.html">Homepage</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="index.html#projects">Featured Projects</a>
+                    </li>
+                    <li>
+                        <span class="opener">Security Projects</span>
+                        <ul>
+                            <li>
+                                <a href="projects/vulnerability-remediation.html">
+                                    Vulnerability Remediation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="projects/security-risk-assessment.html">
+                                    Security Risk Assessment
+                                </a>
+                            </li>
+                            <li>
+                                <a href="projects/security-sops-policy-development.html">
+                                    Security SOPs &amp; Policies
+                                </a>
+                            </li>
+                            <li>
+                                <a href="projects/security-compliance.html">
+                                    Security Compliance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="projects/cryptkey-mfa-application.html">
+                                    CryptKey MFA Application
+                                </a>
+                            </li>
+                            <li>
+                                <a href="projects/network-security.html">
+                                    Network Security &amp; Security Labs
+                                </a>
 								<li>
-									<a href="projects/vulnerability-remediation.html">
-										Vulnerability Remediation
-									</a>
-								</li>
-								<li>
-									<a href="projects/security-risk-assessment.html">
-										Security Risk Assessment
-									</a>
-								</li>
-								<li>
-									<a href="projects/security-sops-policy-development.html">
-										Security SOPs &amp; Policies
-									</a>
-								</li>
-								<li>
-									<a href="projects/cryptkey-mfa-application.html">
-										CryptKey MFA Application
-									</a>
-								</li>
-								<li>
-									<a href="projects/network-security.html">
-										Network Security
-									</a>
-								</li>
-								<li>
-									<a href="projects/security-compliance.html">
-										Security Compliance
-									</a>
-								</li>
-				</nav>
+                                <a href="projects/trace-app.html">
+                                    Trace App
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
 
-				<!-- Section -->
+            <!-- Professional Highlights -->
 				<section>
 					<header class="major">
 						<h2>Professional Highlights</h2>
@@ -305,59 +454,60 @@
 					</ul>
 				</section>
 
-				<!-- Section -->
-				<section>
-					<header class="major">
-						<h2>Let's Connect</h2>
-					</header>
+            <!-- Contact -->
+            <section>
+                <header class="major">
+                    <h2>Let's Connect</h2>
+                </header>
 
-					<p>
-						I'm interested in opportunities where I can apply my cybersecurity,
-						vulnerability management, and technical problem-solving skills to
-						help organizations strengthen their security posture.
+                <p>
+                    I'm interested in opportunities where I can apply my cybersecurity,
+                    vulnerability management, and technical problem-solving skills to
+                    help organizations strengthen their security posture.
+                </p>
 
-						Whether you're recruiting for a cybersecurity role, interested in my
-						projects, or looking to connect with another technology professional,
-						I'd love to hear from you.
-					</p>
+                <p>
+                    Whether you're recruiting for a cybersecurity role, interested
+                    in my projects, or looking to connect with another technology
+                    professional, I'd love to hear from you.
+                </p>
 
-					<ul class="contact">
-						<li class="icon solid fa-envelope">
-							<a href="mailto:jamiah_mcq@yahoo.com">jamiah_mcq@yahoo.com</a>
-						</li>
+                <ul class="contact">
+                    <li class="icon solid fa-envelope">
+                        <a href="mailto:jamiah_mcq@yahoo.com">jamiah_mcq@yahoo.com</a>
+                    </li>
+                    <li class="icon solid fa-home">Flint, MI</li>
+                </ul>
 
-						<li class="icon solid fa-home">
-							Flint, MI
-						</li>
-					</ul>
+                <ul class="actions">
+                    <li>
+                        <a href="assets/files/Jamiah-McQuiller-Resume.pdf"
+                           class="button primary icon solid fa-file-pdf"
+                           target="_blank" rel="noopener noreferrer">
+                            View My Resume
+                        </a>
+                    </li>
+                </ul>
+            </section>
 
-					<ul class="actions">
-						<li>
-							<a href="assets\files\Jamiah-McQuiller-Resume.pdf"
-								class="button primary icon solid fa-file-pdf" target="_blank">
-								View My Resume
-							</a>
-						</li>
-					</ul>
-				</section>
+            <!-- Footer -->
+            <footer id="footer">
+                <p class="copyright">
+                    &copy; 2026 Jamiah McQuiller. All rights reserved.
+                </p>
+            </footer>
 
-				<!-- Footer -->
-				<footer id="footer">
-					<p class="copyright">&copy; 2026 Jamiah McQuiller. All rights reserved.</p>
-				</footer>
+        </div>
+    </div>
 
-			</div>
-		</div>
+</div>
 
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

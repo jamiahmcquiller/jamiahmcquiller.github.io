@@ -1,0 +1,946 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>TRACE — Crime Awareness &amp; Public Safety | Jamiah McQuiller</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TRACE is an academic public safety application project exploring crime awareness, interactive mapping, customizable alerts, user research, and usability design.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        .project-hero {
+            padding: 2rem 0;
+            border-bottom: 3px solid #f56a6a;
+            margin-bottom: 2.5rem;
+        }
+
+        .project-hero h1 {
+            margin-bottom: 0.75rem;
+        }
+
+        .project-note {
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .project-tags span {
+            border: 1px solid #d9d9d9;
+            border-radius: 4px;
+            padding: 0.35rem 0.75rem;
+            font-size: 0.85rem;
+        }
+
+        .project-section {
+            margin: 2.5rem 0;
+        }
+
+        .project-callout {
+            background: #f7f7f7;
+            border-left: 4px solid #f56a6a;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1.25rem;
+        }
+
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            margin-bottom: 0;
+        }
+
+        .project-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+
+        .project-actions .button {
+            margin: 0;
+        }
+
+        .status-label {
+            display: inline-block;
+            border: 1px solid #f56a6a;
+            border-radius: 4px;
+            padding: 0.3rem 0.65rem;
+            color: #d94f4f;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Interactive TRACE application */
+        .trace-prototype-container {
+            width: 100%;
+            height: 780px;
+            overflow: hidden;
+            border: 1px solid #dedede;
+            border-radius: 8px;
+            background: #f7f8f5;
+        }
+
+        .trace-prototype-container iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .trace-open-button {
+            margin-top: 1rem;
+        }
+
+        @media screen and (max-width: 736px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .project-actions .button {
+                text-align: center;
+            }
+
+            .trace-prototype-container {
+                height: 680px;
+            }
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+<div id="wrapper">
+
+    <div id="main">
+        <div class="inner">
+
+            <header id="header">
+                <a href="../index.html" class="logo">
+                    <strong>Jamiah McQuiller</strong> | Cybersecurity Portfolio
+                </a>
+
+                <ul class="icons">
+                    <li>
+                        <a href="https://github.com/jamiahmcquiller"
+                           class="icon brands fa-github"
+                           target="_blank" rel="noopener noreferrer">
+                            <span class="label">GitHub</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jamiahmcquiller/"
+                           class="icon brands fa-linkedin"
+                           target="_blank" rel="noopener noreferrer">
+                            <span class="label">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+
+            <section class="project-hero">
+                <p class="project-note">
+                    Academic Team Project | User Research &amp; Application Design
+                </p>
+
+                <h1>TRACE — Crime Awareness &amp; Public Safety</h1>
+
+                <p>
+                    TRACE is a user-centered application concept designed to make
+                    publicly available crime and public-safety information easier
+                    to find, understand, and explore. The project focuses on
+                    location-based incident awareness, interactive map concepts,
+                    customizable notifications, and clear incident details.
+                </p>
+
+                <p>
+                    <span class="status-label">In Progress · Prototype</span>
+                </p>
+
+                <div class="project-tags">
+                    <span>User Research</span>
+                    <span>UX/UI Design</span>
+                    <span>Figma</span>
+                    <span>Interactive Mapping</span>
+                    <span>Geolocation Concepts</span>
+                    <span>Usability Evaluation</span>
+                    <span>Public Safety</span>
+                </div>
+
+                <div class="project-actions">
+                    <a href="../index.html#projects" class="button primary">
+                        Back to Projects
+                    </a>
+                    <a href="https://trace-j2m79bk2q-mc-quiller.vercel.app"
+                       class="button"
+                       target="_blank" rel="noopener noreferrer">
+                        Launch TRACE App
+                    </a>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Explore the Interactive TRACE App</h2>
+
+                <p>
+                    Explore the current TRACE application below. The app is
+                    deployed separately from this portfolio, allowing you to
+                    interact with the available interface and prototype features.
+                </p>
+
+                <div class="trace-prototype-container">
+                    <iframe
+                        src="https://trace-j2m79bk2q-mc-quiller.vercel.app"
+                        title="Interactive TRACE Crime Awareness and Public Safety Application"
+                        loading="lazy"
+                        allow="geolocation"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <p class="project-note">
+                    TRACE is an academic project in progress. Live crime data,
+                    dispatch recordings, location services, authentication,
+                    and push notifications should not be assumed to be
+                    operational unless implemented and verified.
+                </p>
+
+                <ul class="actions trace-open-button">
+                    <li>
+                        <a href="https://trace-j2m79bk2q-mc-quiller.vercel.app"
+                           class="button primary"
+                           target="_blank" rel="noopener noreferrer">
+                            Open TRACE in a New Tab
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jamiahmcquiller/Trace"
+                           class="button"
+                           target="_blank" rel="noopener noreferrer">
+                            View Source Code
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Project Overview</h2>
+
+                <p>
+                    TRACE is a team-based academic project exploring how people
+                    find, interpret, and share information about crime and
+                    safety in their communities. Relevant information may be
+                    spread across public records, police websites, news reports,
+                    and other sources, making it difficult to locate information
+                    in one place.
+                </p>
+
+                <p>
+                    The project explores a centralized, location-aware interface
+                    where users can browse incident information, filter by
+                    category and time, inspect incident details, and manage
+                    preferences for locations and alerts.
+                </p>
+
+                <div class="project-callout">
+                    <strong>Project objective:</strong>
+                    Explore how user-centered research and interface design can
+                    make public-safety information more accessible,
+                    understandable, and relevant to the places people care about.
+                </div>
+
+                <p class="project-note">
+                    The prototype may use illustrative data and simulated
+                    interactions where live services or backend functionality
+                    have not been implemented.
+                </p>
+            </section>
+
+            <section class="project-section">
+                <h2>The Problem</h2>
+
+                <p>
+                    People may rely on different sources to learn about crime
+                    and safety concerns in their communities. Information can
+                    be difficult to compare, may lack context, or may not be
+                    easy to filter by location and incident type.
+                </p>
+
+                <p>
+                    Receiving information also raises important questions:
+                    Is it current? Is it verified? Is it relevant to a
+                    particular location? Could its presentation create
+                    unnecessary fear or unfairly stigmatize a neighborhood?
+                </p>
+
+                <p>
+                    TRACE explores ways to present incident information with
+                    clearer context, location-based navigation, user-selected
+                    filters, and explicit distinctions between reported and
+                    verified information.
+                </p>
+            </section>
+
+            <section class="project-section">
+                <h2>Design Goals</h2>
+
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>
+                            <span class="icon solid fa-map-marked-alt"></span>
+                            Localized Awareness
+                        </h3>
+                        <p>
+                            Help users explore incident information associated
+                            with places that matter to them, such as a campus,
+                            workplace, home area, or downtown district.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>
+                            <span class="icon solid fa-filter"></span>
+                            Relevant Information
+                        </h3>
+                        <p>
+                            Explore category and time filters so users can
+                            narrow sample incident listings to information
+                            relevant to their interests.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>
+                            <span class="icon solid fa-bell"></span>
+                            User-Controlled Alerts
+                        </h3>
+                        <p>
+                            Design preferences for incident categories,
+                            selected locations, notification radius, and
+                            alert behavior.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>
+                            <span class="icon solid fa-info-circle"></span>
+                            Clear Incident Context
+                        </h3>
+                        <p>
+                            Present incident summaries, timestamps,
+                            approximate locations, and appropriate disclaimers
+                            to help users interpret information carefully.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>
+                            <span class="icon solid fa-user-shield"></span>
+                            Privacy-Conscious Design
+                        </h3>
+                        <p>
+                            Consider privacy, responsible information sharing,
+                            approximate location display, and risks associated
+                            with exposing sensitive information.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>
+                            <span class="icon solid fa-universal-access"></span>
+                            Usability
+                        </h3>
+                        <p>
+                            Evaluate navigation, action visibility, selected
+                            states, feedback, and recovery paths so users can
+                            understand what to do and what happened.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>My Role</h2>
+
+                <p>
+                    I contributed to the user-research and evaluation portions
+                    of this team project. My assigned responsibilities included
+                    contextual inquiry in Phase 2 and usability testing and
+                    iterative design improvements in Phase 5.
+                </p>
+
+                <ul>
+                    <li>
+                        Helped investigate how people discover, assess, and
+                        share crime and personal-safety information.
+                    </li>
+                    <li>
+                        Contributed to interview planning and research
+                        documentation focused on user behaviors, concerns,
+                        frustrations, and existing workarounds.
+                    </li>
+                    <li>
+                        Evaluated user flows and documented usability issues,
+                        including unclear controls, missing feedback, and
+                        opportunities to simplify tasks.
+                    </li>
+                    <li>
+                        Used evaluation findings to identify potential
+                        improvements to navigation, location selection,
+                        notification preferences, and incident discovery.
+                    </li>
+                </ul>
+
+                <p class="project-note">
+                    TRACE was a collaborative project. These responsibilities
+                    reflect my assigned research and evaluation work rather
+                    than sole ownership of the entire application.
+                </p>
+            </section>
+
+            <section class="project-section">
+                <h2>User Research</h2>
+
+                <p>
+                    The research explored how people find and use information
+                    about crime and safety in their communities. Interviews
+                    and surveys were used to investigate user behaviors,
+                    information needs, concerns, and limitations of existing
+                    sources.
+                </p>
+
+                <h3>Research Questions</h3>
+
+                <ul>
+                    <li>How do people learn about incidents in their communities?</li>
+                    <li>How do they decide whether safety information is credible?</li>
+                    <li>What do people do after witnessing or experiencing a safety concern?</li>
+                    <li>What information do users consider urgent versus less time-sensitive?</li>
+                    <li>What frustrations arise when information is incomplete, outdated, or difficult to find?</li>
+                    <li>How do people use crime information when making everyday decisions?</li>
+                    <li>What notification preferences and controls would be useful?</li>
+                </ul>
+
+                <h3>Research Approach</h3>
+
+                <ol>
+                    <li>
+                        <strong>Contextual inquiry:</strong>
+                        Explore participants' experiences and existing
+                        behaviors through open-ended questions and observations.
+                    </li>
+                    <li>
+                        <strong>Research documentation:</strong>
+                        Record observations, participant statements,
+                        frustrations, anxieties, and workarounds without
+                        assuming motivations participants did not express.
+                    </li>
+                    <li>
+                        <strong>Pattern identification:</strong>
+                        Organize research notes into related themes to help
+                        identify user needs and design opportunities.
+                    </li>
+                    <li>
+                        <strong>Personas and journeys:</strong>
+                        Use research evidence to inform representative user
+                        profiles and current-state journey maps.
+                    </li>
+                </ol>
+
+                <p class="project-note">
+                    Public research artifacts should be anonymized and shared
+                    in accordance with applicable course and participant
+                    privacy requirements.
+                </p>
+            </section>
+
+            <section class="project-section">
+                <h2>Prototype &amp; Key Features</h2>
+
+                <p>
+                    The design progressed from early conceptual work and
+                    low-fidelity prototyping toward a medium-fidelity
+                    application prototype. The project explores the following
+                    application areas.
+                </p>
+
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>
+                            <span class="icon solid fa-home"></span>
+                            Home &amp; Incident Feed
+                        </h3>
+                        <p>
+                            Browse illustrative incident cards using feed
+                            concepts such as For You, Recent, or Nearby, and
+                            open individual entries for more information.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>
+                            <span class="icon solid fa-map"></span>
+                            Interactive Map
+                        </h3>
+                        <p>
+                            Explore an incident map centered on the University
+                            of Michigan–Flint and the surrounding downtown
+                            Flint test area, with illustrative markers and
+                            incident-detail navigation.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>
+                            <span class="icon solid fa-sliders-h"></span>
+                            Filters
+                        </h3>
+                        <p>
+                            Explore filtering by incident category and time
+                            range, with selected states, apply and clear
+                            controls, and potential no-results recovery.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>
+                            <span class="icon solid fa-bell"></span>
+                            Notifications
+                        </h3>
+                        <p>
+                            Explore preferences for selected locations,
+                            incident categories, and alert settings.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>
+                            <span class="icon solid fa-location-dot"></span>
+                            Saved Locations
+                        </h3>
+                        <p>
+                            Explore location search and saved-location
+                            concepts that allow users to select places
+                            they want to follow.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>
+                            <span class="icon solid fa-headphones"></span>
+                            Replay Concept
+                        </h3>
+                        <p>
+                            Browse illustrative dispatch-feed entries and
+                            simulated playback states as part of the
+                            incident-awareness experience.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>
+                            <span class="icon solid fa-file-alt"></span>
+                            Incident Details
+                        </h3>
+                        <p>
+                            Present sample incident categories, timestamps,
+                            approximate locations, summaries, and limitations.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>
+                            <span class="icon solid fa-share-alt"></span>
+                            Sharing
+                        </h3>
+                        <p>
+                            Explore a proposed sharing flow for illustrative
+                            incident information while considering privacy
+                            and responsible handling of shared content.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Usability Evaluation</h2>
+
+                <p>
+                    The project included a cognitive walkthrough of key user
+                    tasks to identify where people might struggle to understand
+                    an action, find a control, associate it with the intended
+                    outcome, or recognize the result of an interaction.
+                </p>
+
+                <h3>Examples of Design Opportunities</h3>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Area</th>
+                                <th>Usability Concern</th>
+                                <th>Proposed Improvement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Incident discovery</td>
+                                <td>Users may not immediately recognize how to open an incident from the map or feed.</td>
+                                <td>Make incident markers and detail actions more visible and clearly interactive.</td>
+                            </tr>
+                            <tr>
+                                <td>Location management</td>
+                                <td>Users need confirmation that a location has been selected and saved.</td>
+                                <td>Show selected states, explicit confirmation, and a visible saved-location entry.</td>
+                            </tr>
+                            <tr>
+                                <td>Notification preferences</td>
+                                <td>Users may not know whether their selections have been saved.</td>
+                                <td>Provide clear save controls and a summary of selected alert preferences.</td>
+                            </tr>
+                            <tr>
+                                <td>Incident sharing</td>
+                                <td>Users may need clearer feedback while composing or sending a share action.</td>
+                                <td>Make input controls and completion feedback more apparent.</td>
+                            </tr>
+                            <tr>
+                                <td>Filtering</td>
+                                <td>Users need to understand which filters are active and how to reset them.</td>
+                                <td>Highlight selected options and provide clear Apply and Clear All actions.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="project-callout">
+                    <strong>Evaluation takeaway:</strong>
+                    A control should not only be visible. Users should
+                    understand what it does, see the result of their action,
+                    and have a way to recover when they select the wrong
+                    option or encounter an empty result.
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Current Prototype Status</h2>
+
+                <p>
+                    The current project materials describe a medium-fidelity
+                    prototype with simulated data and interactions where
+                    backend services are unavailable. The design supports
+                    task-based evaluation and continued refinement.
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Area</th>
+                                <th>Current Scope</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Application screens</td>
+                                <td>Prototype concepts for Home, Map, Replay, Notifications, and Profile, with supporting screens where implemented.</td>
+                            </tr>
+                            <tr>
+                                <td>Incident information</td>
+                                <td>Illustrative records and sample incident details.</td>
+                            </tr>
+                            <tr>
+                                <td>Map and locations</td>
+                                <td>Prototype map and location-selection flows; real GPS and live geocoding are not assumed.</td>
+                            </tr>
+                            <tr>
+                                <td>Notifications</td>
+                                <td>Simulated preference controls; real push notifications are not assumed.</td>
+                            </tr>
+                            <tr>
+                                <td>Dispatch replay</td>
+                                <td>Illustrative feed and playback concepts; no live dispatch connection is assumed.</td>
+                            </tr>
+                            <tr>
+                                <td>Authentication</td>
+                                <td>Prototype entry screens where available; authentication may be simulated.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="project-note">
+                    Prototype coverage may change as the design is revised.
+                    A screen or control shown in a design does not by itself
+                    prove that its interaction is connected or functional.
+                </p>
+            </section>
+
+            <section class="project-section">
+                <h2>Privacy, Trust &amp; Responsible Design</h2>
+
+                <p>
+                    Crime and public-safety interfaces can influence how
+                    people perceive risk and their communities. TRACE
+                    considers responsible information presentation an
+                    important design requirement.
+                </p>
+
+                <ul>
+                    <li>Clearly label illustrative or unverified incident information.</li>
+                    <li>Do not imply that a dispatch call automatically confirms that a crime occurred.</li>
+                    <li>Avoid unnecessary disclosure of victims' identities, private individuals' details, or precise sensitive locations.</li>
+                    <li>Consider approximate or aggregated location display where appropriate.</li>
+                    <li>Avoid visualizations that unnecessarily stigmatize neighborhoods or imply incident counts alone explain safety.</li>
+                    <li>Do not publish real dispatch recordings, personal data, or private participant information in portfolio materials.</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Tools &amp; Methods</h2>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tool or Method</th>
+                                <th>Project Application</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Figma</td>
+                                <td>Medium-fidelity screen design and prototype interactions.</td>
+                            </tr>
+                            <tr>
+                                <td>Contextual inquiry</td>
+                                <td>Exploring user behaviors, concerns, and existing information-seeking practices.</td>
+                            </tr>
+                            <tr>
+                                <td>Interviews and surveys</td>
+                                <td>Gathering user perspectives on crime awareness and personal safety information.</td>
+                            </tr>
+                            <tr>
+                                <td>User personas and journey maps</td>
+                                <td>Representing research-informed user needs and current frustrations.</td>
+                            </tr>
+                            <tr>
+                                <td>Paper prototyping</td>
+                                <td>Exploring early layouts, navigation, and task flows before digital refinement.</td>
+                            </tr>
+                            <tr>
+                                <td>Cognitive walkthroughs</td>
+                                <td>Evaluating action visibility, user expectations, feedback, and recovery paths.</td>
+                            </tr>
+                            <tr>
+                                <td>Iterative design</td>
+                                <td>Identifying opportunities to improve clarity and usability based on evaluation.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Next Steps</h2>
+
+                <ul>
+                    <li>Continue refining the prototype based on evaluation findings.</li>
+                    <li>Verify the main task flows in the application.</li>
+                    <li>Improve feedback for saved locations, applied filters, and notification preferences.</li>
+                    <li>Test whether users can find nearby sample incidents and understand their details.</li>
+                    <li>Document usability findings and design changes made in response.</li>
+                    <li>Clearly distinguish implemented interactions from placeholders and future features.</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Project Takeaway</h2>
+
+                <p>
+                    TRACE has given me the opportunity to work on the human
+                    side of technology: understanding user needs, examining
+                    real-world information challenges, and evaluating how
+                    interface design affects people's ability to complete tasks.
+                </p>
+
+                <p>
+                    Through research, prototyping, and usability evaluation,
+                    I have explored how a public-safety information experience
+                    can prioritize clarity, user control, privacy, and
+                    responsible communication while remaining transparent
+                    about the limits of the information it presents.
+                </p>
+
+                <ul class="actions">
+                    <li>
+                        <a href="../index.html#projects" class="button primary">
+                            Back to All Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cryptkey-mfa-application.html" class="button">
+                            View CryptKey MFA
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <div class="inner">
+
+            <section id="search" class="alt">
+                <form method="get" action="#">
+                    <input type="text" name="query" id="query" placeholder="Search">
+                </form>
+            </section>
+
+            <nav id="menu">
+                <header class="major">
+                    <h2>Menu</h2>
+                </header>
+
+                <ul>
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="../about.html">About Me</a></li>
+                    <li><a href="../index.html#projects">Featured Projects</a></li>
+                    <li>
+                        <span class="opener">Security Projects</span>
+                        <ul>
+                            <li><a href="vulnerability-remediation.html">Vulnerability Remediation</a></li>
+                            <li><a href="security-risk-assessment.html">Security Risk Assessment</a></li>
+                            <li><a href="security-sops-policy-development.html">Security SOPs &amp; Policies</a></li>
+                            <li><a href="cryptkey-mfa-application.html">CryptKey MFA Application</a></li>
+                            <li><a href="network-security.html">Network Security &amp; Security Labs</a></li>
+                            <li><a href="security-compliance.html">Security Compliance</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="trace-crime-awareness-app.html" aria-current="page">
+                            TRACE — Public Safety App (In Progress)
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section>
+                <header class="major">
+                    <h2>Professional Highlights</h2>
+                </header>
+
+                <div class="mini-posts">
+                    <article>
+                        <p>
+                            Applied vulnerability prioritization and remediation
+                            practices to help reduce identified vulnerabilities
+                            across 1,392 endpoints from 1,050 to 105. Focused
+                            on remediation tracking, patch management, and
+                            validating improvements.
+                        </p>
+                    </article>
+
+                    <article>
+                        <p>
+                            Developed security documentation and assessment
+                            materials to support consistent risk evaluation,
+                            policy development, and exception review.
+                        </p>
+                    </article>
+
+                    <article>
+                        <p>
+                            Applied user research and usability evaluation
+                            methods to identify opportunities to improve
+                            application clarity, privacy, and user experience.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <header class="major">
+                    <h2>Let's Connect</h2>
+                </header>
+
+                <p>
+                    Interested in cybersecurity, application security,
+                    user-centered design, or collaboration?
+                </p>
+
+                <ul class="contact">
+                    <li class="icon solid fa-envelope">
+                        <a href="mailto:jamiah_mcq@yahoo.com">jamiah_mcq@yahoo.com</a>
+                    </li>
+                    <li class="icon solid fa-map-marker-alt">Flint, Michigan</li>
+                    <li class="icon brands fa-linkedin">
+                        <a href="https://www.linkedin.com/in/jamiahmcquiller/"
+                           target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </li>
+                    <li class="icon brands fa-github">
+                        <a href="https://github.com/jamiahmcquiller"
+                           target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                </ul>
+
+                <ul class="actions">
+                    <li>
+                        <a href="../assets/files/Jamiah-McQuiller-Resume.pdf"
+                           class="button"
+                           target="_blank" rel="noopener noreferrer">
+                            View Resume
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <footer id="footer">
+                <p class="copyright">
+                    &copy; 2026 Jamiah McQuiller. All rights reserved.
+                    Design based on
+                    <a href="https://html5up.net"
+                       target="_blank" rel="noopener noreferrer">HTML5 UP</a>.
+                </p>
+            </footer>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

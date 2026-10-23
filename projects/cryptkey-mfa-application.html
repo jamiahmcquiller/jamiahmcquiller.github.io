@@ -1,0 +1,633 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>CryptKey — MFA Application | Jamiah McQuiller</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="CryptKey is an academic cybersecurity project exploring multi-factor authentication, TOTP generation, QR-code scanning, and secure authentication workflows using Python and Flask." />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+    <style>
+        .project-hero {
+            padding: 2rem 0;
+            border-bottom: 3px solid #f56a6a;
+            margin-bottom: 2.5rem;
+        }
+
+        .project-hero h1 {
+            margin-bottom: 0.75rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .project-tags span {
+            border: 1px solid #d9d9d9;
+            border-radius: 4px;
+            padding: 0.35rem 0.75rem;
+            font-size: 0.85rem;
+        }
+
+        .project-section {
+            margin: 2.5rem 0;
+        }
+
+        .project-callout {
+            background: #f7f7f7;
+            border-left: 4px solid #f56a6a;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .project-note {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1.25rem;
+        }
+
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            margin-bottom: 0;
+        }
+
+        .project-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+
+        .project-actions .button {
+            margin: 0;
+        }
+
+        .project-section table {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 736px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .project-actions .button {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+<div id="wrapper">
+
+    <div id="main">
+        <div class="inner">
+
+            <header id="header">
+                <a href="../index.html" class="logo">
+                    <strong>Jamiah McQuiller</strong> | Cybersecurity Portfolio
+                </a>
+                <ul class="icons">
+                    <li>
+                        <a href="https://github.com/jamiahmcquiller"
+                           class="icon brands fa-github"
+                           target="_blank" rel="noopener noreferrer">
+                            <span class="label">GitHub</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jamiahmcquiller/"
+                           class="icon brands fa-linkedin"
+                           target="_blank" rel="noopener noreferrer">
+                            <span class="label">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+
+            <section class="project-hero">
+                <p class="project-note">Academic Project | Authentication &amp; Application Security</p>
+                <h1>CryptKey — MFA Application</h1>
+
+                <p>
+                    Built a security-focused application using Python and Flask to explore
+                    authentication workflows and multi-factor authentication concepts.
+                    The project focused on time-based one-time passwords, QR-code scanning,
+                    user registration, security-key management, and validation workflows.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>Multi-Factor Authentication</span>
+                    <span>TOTP</span>
+                    <span>QR Codes</span>
+                    <span>Application Security</span>
+                </div>
+
+                <div class="project-actions">
+                    <a href="https://github.com/jamiahmcquiller/CryptKey"
+                       class="button primary"
+                       target="_blank" rel="noopener noreferrer">
+                        <span class="icon brands fa-github"></span>
+                        View GitHub Repository
+                    </a>
+                    <a href="../index.html#projects" class="button">
+                        Back to Projects
+                    </a>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Project Overview</h2>
+
+                <p>
+                    CryptKey was developed as a team-based academic cybersecurity project
+                    to explore how additional authentication factors can help protect user
+                    accounts. The application brought together a web interface and
+                    authentication-related backend functionality using Python and Flask.
+                </p>
+
+                <p>
+                    Development included designing user-facing authentication screens,
+                    implementing registration and validation workflows, generating
+                    time-based authentication codes, and exploring QR-code-based account
+                    setup.
+                </p>
+
+                <div class="project-callout">
+                    <strong>Project objective:</strong>
+                    Explore practical MFA implementation, connect frontend and backend
+                    workflows, and identify the security and testing considerations
+                    involved in building an authentication application.
+                </div>
+
+                <p class="project-note">
+                    This was an academic prototype, not a production-ready authenticator
+                    or a formally audited security product.
+                </p>
+            </section>
+
+            <section class="project-section">
+                <h2>Security Problem</h2>
+
+                <p>
+                    Password-only authentication can leave accounts exposed when
+                    credentials are stolen, reused, or disclosed through phishing.
+                    Multi-factor authentication adds another verification step, but
+                    implementing it securely requires careful handling of authentication
+                    secrets, validation logic, user sessions, and communication.
+                </p>
+
+                <p>
+                    CryptKey provided a way to examine these challenges through a
+                    practical application. The project emphasized the relationship
+                    between usability and security, including clear user flows for
+                    registering accounts, scanning QR codes, and validating authentication
+                    codes.
+                </p>
+            </section>
+
+            <section class="project-section">
+                <h2>Features and Implementation</h2>
+
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3><span class="icon solid fa-user-plus"></span> User Registration</h3>
+                        <p>
+                            Developed a registration workflow and connected the
+                            user-facing interface with backend functionality for
+                            onboarding users.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3><span class="icon solid fa-key"></span> TOTP Generation</h3>
+                        <p>
+                            Integrated the <code>pyotp</code> library to generate
+                            time-based one-time passwords and support authentication
+                            code validation.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3><span class="icon solid fa-qrcode"></span> QR-Code Scanning</h3>
+                        <p>
+                            Used OpenCV and <code>pyzbar</code> to explore camera-based
+                            QR-code scanning and extraction of authentication setup
+                            information.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3><span class="icon solid fa-shield-alt"></span> Security-Key Management</h3>
+                        <p>
+                            Implemented functionality to generate unique security keys,
+                            display them in a read-only format, and provide a
+                            copy-to-clipboard option.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3><span class="icon solid fa-sign-in-alt"></span> Authentication Workflows</h3>
+                        <p>
+                            Developed login, QR-code login, and validation screens to
+                            explore the interaction between authentication interfaces
+                            and backend processing.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3><span class="icon solid fa-desktop"></span> UI/UX Design</h3>
+                        <p>
+                            Designed application screens for navigation, account
+                            management, authentication, and security settings with an
+                            emphasis on clarity and usability.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Authentication Workflow</h2>
+
+                <p>
+                    The application was organized around a sequence of user and
+                    authentication actions. The following summarizes the intended
+                    workflow rather than representing a production deployment.
+                </p>
+
+                <ol>
+                    <li>
+                        <strong>User registration:</strong>
+                        A user accesses the registration interface and submits the
+                        required information.
+                    </li>
+                    <li>
+                        <strong>Authentication setup:</strong>
+                        The application supports security-key and QR-code workflows
+                        for setting up authentication.
+                    </li>
+                    <li>
+                        <strong>Code generation:</strong>
+                        TOTP functionality generates time-based codes from
+                        authentication secrets.
+                    </li>
+                    <li>
+                        <strong>Validation:</strong>
+                        The application checks submitted codes or QR-related
+                        authentication information through its validation workflow.
+                    </li>
+                    <li>
+                        <strong>Testing and refinement:</strong>
+                        Individual components and their integration are evaluated
+                        to identify issues in scanning, validation, and usability.
+                    </li>
+                </ol>
+
+                <div class="project-callout">
+                    <strong>Security consideration:</strong>
+                    TOTP implementations depend on protecting the underlying shared
+                    secret. Generating a valid code alone does not establish that an
+                    entire authentication system is secure.
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Technology Stack</h2>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Technology</th>
+                                <th>Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Python</td>
+                                <td>Backend development and application logic.</td>
+                            </tr>
+                            <tr>
+                                <td>Flask</td>
+                                <td>Web application framework and routing.</td>
+                            </tr>
+                            <tr>
+                                <td>pyotp</td>
+                                <td>Time-based one-time password functionality.</td>
+                            </tr>
+                            <tr>
+                                <td>OpenCV</td>
+                                <td>Camera integration and image processing for QR scanning.</td>
+                            </tr>
+                            <tr>
+                                <td>pyzbar</td>
+                                <td>QR-code decoding.</td>
+                            </tr>
+                            <tr>
+                                <td>HTML and CSS</td>
+                                <td>Authentication screens and user interface.</td>
+                            </tr>
+                            <tr>
+                                <td>GitHub</td>
+                                <td>Project source-code hosting and version tracking.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Testing and Validation</h2>
+
+                <p>
+                    Testing focused on whether the main authentication components
+                    worked together as intended. The project checkpoint report
+                    documented the following preliminary results:
+                </p>
+
+                <ul>
+                    <li>User registration functionality was reported as working.</li>
+                    <li>TOTP generation and validation were reported as functional.</li>
+                    <li>Camera-based QR scanning was reported as operational.</li>
+                    <li>
+                        The checkpoint report recorded approximately 90% QR-code
+                        scanning accuracy in the test cases used.
+                    </li>
+                </ul>
+
+                <p>
+                    These are preliminary project-reported results, not the outcome
+                    of an independent security audit or a comprehensive test suite.
+                    The available checkpoint report does not establish that the
+                    application was penetration-tested or production-hardened.
+                </p>
+
+                <h3>Testing Areas to Consider</h3>
+                <ul>
+                    <li>Valid, invalid, and expired TOTP codes.</li>
+                    <li>Incorrect or unreadable QR codes.</li>
+                    <li>Registration and authentication error handling.</li>
+                    <li>Protection of authentication secrets and user credentials.</li>
+                    <li>Session management and access-control checks.</li>
+                    <li>Input validation and secure configuration.</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Known Limitations and Future Improvements</h2>
+
+                <p>
+                    CryptKey was an academic prototype, and the project checkpoint
+                    identified several features that were incomplete or proposed
+                    for future development. They should not be interpreted as
+                    completed functionality.
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Area</th>
+                                <th>Documented Status</th>
+                                <th>Potential Next Step</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Local encryption</td>
+                                <td>Partially implemented at the checkpoint.</td>
+                                <td>Verify encryption implementation, key management, and secure storage.</td>
+                            </tr>
+                            <tr>
+                                <td>HTTPS/TLS</td>
+                                <td>Listed as remaining work.</td>
+                                <td>Configure and verify secure transport for deployed services.</td>
+                            </tr>
+                            <tr>
+                                <td>Push notifications</td>
+                                <td>Planned enhancement.</td>
+                                <td>Design and test an authentication-request approval workflow.</td>
+                            </tr>
+                            <tr>
+                                <td>Biometric authentication</td>
+                                <td>Proposed future enhancement.</td>
+                                <td>Evaluate platform-supported biometric APIs and fallback methods.</td>
+                            </tr>
+                            <tr>
+                                <td>Backup and restore</td>
+                                <td>Planned enhancement.</td>
+                                <td>Define secure backup, recovery, and encryption requirements.</td>
+                            </tr>
+                            <tr>
+                                <td>Risk-based authentication</td>
+                                <td>Proposed future enhancement.</td>
+                                <td>Define risk signals and test decision logic before implementation.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="project-note">
+                    Status reflects the uploaded project checkpoint report. Review the
+                    current repository before publishing if the implementation has
+                    changed since that report.
+                </p>
+            </section>
+
+            <section class="project-section">
+                <h2>Skills Demonstrated</h2>
+
+                <ul>
+                    <li>Python application development with Flask.</li>
+                    <li>Authentication concepts and TOTP workflows.</li>
+                    <li>QR-code scanning and library integration.</li>
+                    <li>Frontend and backend workflow integration.</li>
+                    <li>Application testing and troubleshooting.</li>
+                    <li>Security-focused UI/UX design.</li>
+                    <li>Identifying implementation gaps and documenting limitations.</li>
+                    <li>Collaborative development and technical documentation.</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Project Resources</h2>
+
+                <p>
+                    Explore the source code and project materials for additional
+                    implementation context.
+                </p>
+
+                <ul class="alt">
+                    <li>
+                        <a href="https://github.com/jamiahmcquiller/CryptKey"
+                           target="_blank" rel="noopener noreferrer">
+                            CryptKey GitHub Repository
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="project-note">
+                    Review the repository before publishing to ensure it does not
+                    contain credentials, tokens, private keys, personal information,
+                    local configuration files, or other sensitive data. Do not
+                    publish real authentication secrets or user records.
+                </p>
+            </section>
+
+            <section class="project-section">
+                <h2>Project Takeaway</h2>
+
+                <p>
+                    CryptKey provided hands-on experience connecting web application
+                    development with authentication concepts. It reinforced that
+                    implementing an authentication feature involves more than
+                    generating a code: secure secret handling, validation,
+                    communication, testing, usability, and clear documentation all
+                    contribute to the overall security of the system.
+                </p>
+
+                <ul class="actions">
+                    <li>
+                        <a href="../index.html#projects" class="button primary">
+                            Back to All Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="security-risk-assessment.html" class="button">
+                            Security Risk Assessment
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <div class="inner">
+
+            <section id="search" class="alt">
+                <form method="get" action="#">
+                    <input type="text" name="query" id="query" placeholder="Search" />
+                </form>
+            </section>
+
+            <nav id="menu">
+                <header class="major">
+                    <h2>Menu</h2>
+                </header>
+                <ul>
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="../about.html">About Me</a></li>
+                    <li><a href="../index.html#projects">Featured Projects</a></li>
+                    <li>
+                        <span class="opener">Security Projects</span>
+                        <ul>
+                            <li><a href="vulnerability-remediation.html">Vulnerability Remediation</a></li>
+                            <li><a href="security-risk-assessment.html">Security Risk Assessment</a></li>
+                            <li><a href="security-sops-policy-development.html">Security SOPs &amp; Policies</a></li>
+                            <li><a href="cryptkey-mfa-application.html" aria-current="page">CryptKey MFA Application</a></li>
+                            <li><a href="network-security.html">Network Security &amp; Security Labs</a></li>
+                            <li><a href="security-compliance.html">Security Compliance</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <section>
+                <header class="major">
+                    <h2>Professional Highlights</h2>
+                </header>
+                <ul>
+                    <li>Vulnerability remediation across 1,392 endpoints</li>
+                    <li>Reduced identified vulnerabilities from 1,050 to 105</li>
+                    <li>Security risk assessments and exception reviews</li>
+                    <li>Security SOPs, policies, and standards development</li>
+                    <li>Application security and multi-factor authentication coursework</li>
+                </ul>
+            </section>
+
+            <section>
+                <header class="major">
+                    <h2>Let's Connect</h2>
+                </header>
+
+                <p>
+                    Interested in cybersecurity, application security, or collaboration?
+                    Feel free to connect.
+                </p>
+
+                <ul class="contact">
+                    <li class="icon solid fa-envelope">
+                        <a href="mailto:jamiah_mcq@yahoo.com">jamiah_mcq@yahoo.com</a>
+                    </li>
+                    <li class="icon solid fa-map-marker-alt">Flint, Michigan</li>
+                    <li class="icon brands fa-linkedin">
+                        <a href="https://www.linkedin.com/in/jamiahmcquiller/"
+                           target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </li>
+                    <li class="icon brands fa-github">
+                        <a href="https://github.com/jamiahmcquiller"
+                           target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                </ul>
+
+                <ul class="actions">
+                    <li>
+                        <a href="../assets/files/Jamiah-McQuiller-Resume.pdf"
+                           class="button" target="_blank" rel="noopener noreferrer">
+                            View Resume
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <footer id="footer">
+                <p class="copyright">
+                    &copy; Jamiah McQuiller. All rights reserved.
+                    Design based on
+                    <a href="https://html5up.net"
+                       target="_blank" rel="noopener noreferrer">HTML5 UP</a>.
+                </p>
+            </footer>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
