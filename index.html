@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -11,7 +12,7 @@
 
 	<style>
 		/* Featured project icon layout */
-		#projects .posts article>a.project-image.project-icon {
+		#projects .posts article > a.project-image.project-icon {
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -26,12 +27,12 @@
 			opacity: 1;
 		}
 
-		#projects .posts article>a.project-image.project-icon::before {
+		#projects .posts article > a.project-image.project-icon::before {
 			display: none !important;
 			content: none !important;
 		}
 
-		#projects .posts article>a.project-image.project-icon .icon {
+		#projects .posts article > a.project-image.project-icon .icon {
 			display: inline-flex;
 			align-items: center;
 			justify-content: center;
@@ -41,13 +42,13 @@
 			transition: transform 0.2s ease, color 0.2s ease;
 		}
 
-		#projects .posts article>a.project-image.project-icon:hover .icon {
+		#projects .posts article > a.project-image.project-icon:hover .icon {
 			color: #e65353;
 			transform: translateY(-4px);
 		}
 
-		/* Restore CryptKey logo without a border */
-		#projects .posts article>a.project-image.cryptkey-logo {
+		/* CryptKey logo */
+		#projects .posts article > a.project-image.cryptkey-logo {
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -62,12 +63,12 @@
 			opacity: 1;
 		}
 
-		#projects .posts article>a.project-image.cryptkey-logo::before {
+		#projects .posts article > a.project-image.cryptkey-logo::before {
 			display: none !important;
 			content: none !important;
 		}
 
-		#projects .posts article>a.project-image.cryptkey-logo img {
+		#projects .posts article > a.project-image.cryptkey-logo img {
 			display: block;
 			width: 100%;
 			max-width: 260px;
@@ -80,7 +81,7 @@
 			opacity: 1;
 		}
 
-		/* Center buttons beneath each project description */
+		/* Center project buttons */
 		#projects .posts article ul.actions {
 			display: flex;
 			justify-content: center;
@@ -100,13 +101,12 @@
 		}
 
 		@media screen and (max-width: 736px) {
-
-			#projects .posts article>a.project-image.project-icon,
-			#projects .posts article>a.project-image.cryptkey-logo {
+			#projects .posts article > a.project-image.project-icon,
+			#projects .posts article > a.project-image.cryptkey-logo {
 				height: 190px;
 			}
 
-			#projects .posts article>a.project-image.project-icon .icon {
+			#projects .posts article > a.project-image.project-icon .icon {
 				font-size: 3.8rem;
 			}
 		}
@@ -128,14 +128,16 @@
 
 					<ul class="icons">
 						<li>
-							<a href="https://www.linkedin.com/in/jamiahmcquiller/" class="icon brands fa-linkedin"
+							<a href="https://www.linkedin.com/in/jamiahmcquiller/"
+								class="icon brands fa-linkedin"
 								target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
 								<span class="label">LinkedIn</span>
 							</a>
 						</li>
 						<li>
-							<a href="https://github.com/jamiahmcquiller" class="icon brands fa-github" target="_blank"
-								rel="noopener noreferrer" aria-label="GitHub">
+							<a href="https://github.com/jamiahmcquiller"
+								class="icon brands fa-github"
+								target="_blank" rel="noopener noreferrer" aria-label="GitHub">
 								<span class="label">GitHub</span>
 							</a>
 						</li>
@@ -260,9 +262,9 @@
 
 					<div class="posts">
 
-						<!-- Project 1: Vulnerability Remediation -->
 						<article>
-							<a href="projects/vulnerability-remediation.html" class="image project-image project-icon"
+							<a href="projects/vulnerability-remediation.html"
+								class="image project-image project-icon"
 								aria-label="View Enterprise Vulnerability Remediation case study">
 								<span class="icon solid fa-tachometer-alt" aria-hidden="true"></span>
 							</a>
@@ -276,15 +278,13 @@
 							</p>
 
 							<ul class="actions">
-								<li>
-									<a href="projects/vulnerability-remediation.html" class="button">Case Study</a>
-								</li>
+								<li><a href="projects/vulnerability-remediation.html" class="button">Case Study</a></li>
 							</ul>
 						</article>
 
-						<!-- Project 2: Security Risk Assessment -->
 						<article>
-							<a href="projects/security-risk-assessment.html" class="image project-image project-icon"
+							<a href="projects/security-risk-assessment.html"
+								class="image project-image project-icon"
 								aria-label="View Security Risk Assessment and USB Exceptions case study">
 								<span class="icon solid fa-balance-scale" aria-hidden="true"></span>
 							</a>
@@ -297,13 +297,10 @@
 							</p>
 
 							<ul class="actions">
-								<li>
-									<a href="projects/security-risk-assessment.html" class="button">Case Study</a>
-								</li>
+								<li><a href="projects/security-risk-assessment.html" class="button">Case Study</a></li>
 							</ul>
 						</article>
 
-						<!-- Project 3: Security SOPs -->
 						<article>
 							<a href="projects/security-sops-policy-development.html"
 								class="image project-image project-icon"
@@ -320,15 +317,16 @@
 
 							<ul class="actions">
 								<li>
-									<a href="projects/security-sops-policy-development.html" class="button">View
-										Documentation</a>
+									<a href="projects/security-sops-policy-development.html" class="button">
+										View Documentation
+									</a>
 								</li>
 							</ul>
 						</article>
 
-						<!-- Project 4: Security Compliance -->
 						<article>
-							<a href="projects/security-compliance.html" class="image project-image project-icon"
+							<a href="projects/security-compliance.html"
+								class="image project-image project-icon"
 								aria-label="View Security Controls and Compliance project">
 								<span class="icon solid fa-tasks" aria-hidden="true"></span>
 							</a>
@@ -341,15 +339,13 @@
 							</p>
 
 							<ul class="actions">
-								<li>
-									<a href="projects/security-compliance.html" class="button">View Project</a>
-								</li>
+								<li><a href="projects/security-compliance.html" class="button">View Project</a></li>
 							</ul>
 						</article>
 
-						<!-- Project 5: CryptKey MFA Application -->
 						<article>
-							<a href="projects/cryptkey-mfa-application.html" class="image project-image cryptkey-logo"
+							<a href="projects/cryptkey-mfa-application.html"
+								class="image project-image cryptkey-logo"
 								aria-label="View CryptKey MFA Application project">
 								<img src="images/cryptkey-logo.png"
 									alt="CryptKey multi-factor authentication application logo" />
@@ -363,15 +359,13 @@
 							</p>
 
 							<ul class="actions">
-								<li>
-									<a href="projects/cryptkey-mfa-application.html" class="button">View Project</a>
-								</li>
+								<li><a href="projects/cryptkey-mfa-application.html" class="button">View Project</a></li>
 							</ul>
 						</article>
 
-						<!-- Project 6: Network Security -->
 						<article>
-							<a href="projects/network-security.html" class="image project-image project-icon"
+							<a href="projects/network-security.html"
+								class="image project-image project-icon"
 								aria-label="View Network Security and Security Labs">
 								<span class="icon solid fa-terminal" aria-hidden="true"></span>
 							</a>
@@ -384,9 +378,7 @@
 							</p>
 
 							<ul class="actions">
-								<li>
-									<a href="projects/network-security.html" class="button">View Lab</a>
-								</li>
+								<li><a href="projects/network-security.html" class="button">View Lab</a></li>
 							</ul>
 						</article>
 
@@ -417,6 +409,7 @@
 						<li><a href="index.html">Homepage</a></li>
 						<li><a href="about.html">About Me</a></li>
 						<li><a href="index.html#projects">Featured Projects</a></li>
+
 						<li>
 							<span class="opener">Security Projects</span>
 							<ul>
@@ -450,10 +443,14 @@
 										Network Security &amp; Security Labs
 									</a>
 								</li>
-								<a href="trace-app.html">
-									TRACE — Public Safety App
-								</a>
+								<li>
+									<a href="projects/trace-app.html">
+										TRACE — Public Safety App
+									</a>
+								</li>
+							</ul>
 						</li>
+					</ul>
 				</nav>
 
 				<!-- Professional Highlights -->
@@ -530,7 +527,8 @@
 					<ul class="actions">
 						<li>
 							<a href="assets/files/Jamiah-McQuiller-Resume.pdf"
-								class="button primary icon solid fa-file-pdf" target="_blank" rel="noopener noreferrer">
+								class="button primary icon solid fa-file-pdf"
+								target="_blank" rel="noopener noreferrer">
 								View My Resume
 							</a>
 						</li>
@@ -557,5 +555,4 @@
 	<script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
