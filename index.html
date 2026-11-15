@@ -5,323 +5,353 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Jamiah McQuiller | Cybersecurity &amp; Vulnerability Management</title>
 	<meta name="description" content="Jamiah McQuiller's cybersecurity portfolio featuring vulnerability remediation, security risk assessments, security documentation, application security, and network security." />
-	<meta name="theme-color" content="#FAF7F2" />
+	<meta name="theme-color" content="#0a0a0a" />
 	<link rel="icon" href="favicon.svg" type="image/svg+xml" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Montserrat:wght@400;500;600&amp;display=swap" />
 	<link rel="stylesheet" href="assets/css/site.css" />
 </head>
 <body>
 	<a class="skip-link" href="#main">Skip to content</a>
 	<header class="site-nav">
 		<div class="wrap">
-			<a class="wordmark" href="index.html" aria-label="Jamiah McQuiller, home">Jamiah <span>McQuiller</span></a>
-			<button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false">Menu</button>
+			<div class="nav-meta">
+				<a class="logo-box" href="index.html" aria-label="Jamiah McQuiller, home">JM</a>
+				<span class="version"><span class="dot">●</span> Portfolio v2.0 · 2026</span>
+			</div>
+			<button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false">[menu]</button>
 			<nav aria-label="Primary">
 				<ul class="nav-links" id="nav-links">
-					<li><a href="about.html">About</a></li><li><a href="#expertise">Expertise</a></li><li><a href="#projects">Work</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li>
-					<li><a class="nav-cta" href="assets/files/Jamiah-McQuiller-Resume.pdf" target="_blank" rel="noopener noreferrer">Résumé</a></li>
+					<li><a href="#projects">[work]</a></li>
+					<li><a href="about.html">[about]</a></li>
+					<li><a href="#experience">[experience]</a></li>
+					<li><a href="#writing">[writing]</a></li>
+					<li><a href="assets/files/Jamiah-McQuiller-Resume.pdf" target="_blank" rel="noopener noreferrer">[resume]</a></li>
+					<li><a href="#contact">[contact]</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<main id="main">
-		<!-- Hero -->
-		<section class="hero" aria-labelledby="hero-title">
-			<div class="wrap hero-grid">
-				<div>
-					<p class="kicker reveal">Cybersecurity Portfolio</p>
-					<h1 id="hero-title" class="reveal"><span class="visually-hidden">Hi, I’m </span><span class="line">Jamiah</span> <em class="line">McQuiller</em></h1>
-					<p class="title reveal">Cybersecurity &amp; Vulnerability Management</p>
-					<p class="pitch reveal">I’m a cybersecurity professional focused on vulnerability remediation, endpoint security, risk assessment, and security documentation.</p>
-					<ul class="actions reveal">
-						<li><a href="#projects" class="btn btn--solid">View Projects</a></li>
-						<li><a href="assets/files/Jamiah-McQuiller-Resume.pdf" class="btn" target="_blank" rel="noopener noreferrer">Résumé (PDF)</a></li>
-						<li><a href="#contact" class="link-arrow">Contact</a></li>
-					</ul>
-					<ul class="details reveal">
-						<li>Flint, MI</li>
-						<li><a href="https://www.linkedin.com/in/jamiahmcquiller/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-						<li><a href="https://github.com/jamiahmcquiller" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-					</ul>
+		<div class="wrap">
+			<div class="term">
+				<div class="term-bar" aria-hidden="true">
+					<span class="term-dots"><span class="r"></span><span class="y"></span><span class="g"></span></span>
+					<span class="term-title"><b>jamiah</b>@portfolio:~</span>
 				</div>
-				<figure class="frame reveal">
-					<img src="images/headshot.jpg" alt="Jamiah McQuiller" width="630" height="800" />
-					<figcaption><span>CompTIA Security+</span>Certified</figcaption>
-				</figure>
-			</div>
-		</section>
+				<div class="term-body">
+					<!-- Hero -->
+					<section aria-labelledby="hero-title">
+						<p class="prompt"><span class="user">jamiah@portfolio:~</span>$ <span class="cmd">whoami</span></p>
+						<div class="hero-grid">
+							<div>
+								<h1 id="hero-title" class="hero-name">Jamiah McQuiller<span class="cursor" aria-hidden="true"></span></h1>
+								<p class="hero-sub">Cybersecurity &amp; Vulnerability Management</p>
+								<p class="hero-pitch">I&rsquo;m a cybersecurity professional focused on vulnerability remediation, endpoint security, risk assessment, and security documentation.</p>
+								<ul class="hero-actions">
+									<li><a href="#projects" class="btn btn--solid">./work</a></li>
+									<li><a href="assets/files/Jamiah-McQuiller-Resume.pdf" class="link-arrow" target="_blank" rel="noopener noreferrer">resume.pdf &rarr;</a></li>
+								</ul>
+							</div>
+							<figure class="headshot">
+								<span class="frame-label">view ./headshot</span>
+								<img src="images/headshot.jpg" alt="Jamiah McQuiller" width="630" height="800" />
+								<figcaption><b># CompTIA Security+</b> &middot; Certified</figcaption>
+							</figure>
+						</div>
+						<!-- Stats -->
+						<div class="stats" role="list" aria-label="Key impact">
+							<div class="stat" role="listitem"><span class="fig">1,392</span><span class="cap">Managed endpoints</span><span class="bar"><i style="width:100%"></i></span></div>
+							<div class="stat" role="listitem"><span class="fig">1,050</span><span class="cap">Initial vulnerabilities</span><span class="bar"><i style="width:100%"></i></span></div>
+							<div class="stat" role="listitem"><span class="fig">105</span><span class="cap">Remaining vulnerabilities</span><span class="bar"><i style="width:10%"></i></span></div>
+							<div class="stat" role="listitem"><span class="fig">90%</span><span class="cap">Reduction</span><span class="bar"><i style="width:90%"></i></span></div>
+							<div class="stat" role="listitem"><span class="fig">Security+</span><span class="cap">CompTIA certified</span><span class="bar"><i style="width:100%"></i></span></div>
+						</div>
+					</section>
 
-		<!-- Impact spread -->
-		<section class="band band--black" aria-labelledby="impact-title">
-			<div class="wrap">
-				<div class="impact-head">
-					<div class="reveal">
-						<p class="kicker">Key Impact</p>
-						<h2 id="impact-title">Enterprise <em>Vulnerability Remediation</em></h2>
-					</div>
-					<p class="reveal">Applied vulnerability prioritization and remediation practices to help reduce identified vulnerabilities across 1,392 endpoints from 1,050 to 105. Focused on remediation tracking, patch management, and validating improvements.</p>
-				</div>
-				<ul class="impact">
-					<li class="reveal"><span class="fig">1,392</span><span class="cap">Endpoints<em>across the remediation environment</em></span></li>
-					<li class="reveal"><span class="fig">1,050<small>to</small>105</span><span class="cap">Identified vulnerabilities<em>reduced during the reported period</em></span></li>
-					<li class="reveal"><span class="fig">90%</span><span class="cap">Reduction<em>in identified vulnerabilities</em></span></li>
-					<li class="reveal"><span class="fig"><em>Security+</em></span><span class="cap">CompTIA<em>professional certification</em></span></li>
-				</ul>
-			</div>
-		</section>
+					<!-- Quote -->
+					<section class="term-section" aria-label="Approach">
+						<blockquote>&ldquo;I combine hands-on IT experience with security-focused problem-solving to help organizations reduce risk, strengthen endpoint protection, and improve security practices.&rdquo;</blockquote>
+					</section>
 
-		<!-- Pull quote -->
-		<section class="band quote" aria-label="Approach">
-			<div class="wrap">
-				<div class="ornament reveal" aria-hidden="true">✦</div>
-				<blockquote class="reveal"><p>“I combine hands-on IT experience with security-focused problem-solving to help organizations reduce risk, strengthen endpoint protection, and improve security practices.”</p></blockquote>
-				<div class="ornament reveal" aria-hidden="true">✦</div>
-			</div>
-		</section>
+					<!-- Projects -->
+					<section class="term-section" id="projects" aria-labelledby="projects-title">
+						<h2 id="projects-title" class="visually-hidden">Featured Projects</h2>
+						<p class="section-prompt"><span class="prompt">$</span> ls ./work <span class="dim"># Featured Projects</span></p>
+						<ul class="filters" role="group" aria-label="Filter projects">
+							<li><button class="filter-btn is-active" type="button" data-filter="all">all</button></li>
+							<li><button class="filter-btn" type="button" data-filter="case-study">case study</button></li>
+							<li><button class="filter-btn" type="button" data-filter="documentation">documentation</button></li>
+							<li><button class="filter-btn" type="button" data-filter="application">application</button></li>
+							<li><button class="filter-btn" type="button" data-filter="security-lab">security lab</button></li>
+						</ul>
+						<ul class="project-list">
+							<li class="project" data-category="case-study">
+								<span class="pid">drwx 01</span>
+								<div>
+									<h3>Enterprise Vulnerability Remediation <span class="flag">* flagship</span> <span class="tag">./case-study</span></h3>
+									<p>Endpoint patch management and remediation tracking with ManageEngine Endpoint Central.</p>
+									<p class="tech"><b>tech:</b> ManageEngine Endpoint Central</p>
+									<p class="tech"><b>1,392</b> endpoints &middot; <b>1,050 &rarr; 105</b> vulnerabilities &middot; <b>90%</b> reduction</p>
+								</div>
+								<a class="explore" href="projects/vulnerability-remediation.html">explore &rarr;</a>
+							</li>
+							<li class="project" data-category="case-study">
+								<span class="pid">drwx 02</span>
+								<div>
+									<h3>Security Risk Assessment &amp; USB Exceptions <span class="tag">./case-study</span></h3>
+									<p>Evaluating business justifications, data sensitivity, and risk for removable-media exceptions.</p>
+								</div>
+								<a class="explore" href="projects/security-risk-assessment.html">explore &rarr;</a>
+							</li>
+							<li class="project" data-category="documentation">
+								<span class="pid">drwx 03</span>
+								<div>
+									<h3>Security SOPs &amp; Policy Development <span class="tag">./documentation</span></h3>
+									<p>Standard operating procedures, policies, standards, and repeatable workflows.</p>
+								</div>
+								<a class="explore" href="projects/security-sops-policy-development.html">explore &rarr;</a>
+							</li>
+							<li class="project" data-category="documentation">
+								<span class="pid">drwx 04</span>
+								<div>
+									<h3>Security Controls &amp; Compliance <span class="tag">./documentation</span></h3>
+									<p>Sanitized examples of control mapping, evidence planning, and remediation tracking.</p>
+								</div>
+								<a class="explore" href="projects/security-compliance.html">explore &rarr;</a>
+							</li>
+							<li class="project" data-category="application">
+								<span class="pid">drwx 05</span>
+								<div>
+									<h3>CryptKey &mdash; MFA Application <span class="tag">./application</span></h3>
+									<p>A Python and Flask app exploring TOTP, QR-code scanning, and multi-factor authentication.</p>
+									<p class="tech"><b>tech:</b> Python, Flask, TOTP, QR codes</p>
+									<a class="thumb" href="projects/cryptkey-mfa-application.html" tabindex="-1" aria-hidden="true"><img src="images/cryptkey-logo.png" alt="" /></a>
+								</div>
+								<a class="explore" href="projects/cryptkey-mfa-application.html">explore &rarr;</a>
+							</li>
+							<li class="project" data-category="security-lab">
+								<span class="pid">drwx 06</span>
+								<div>
+									<h3>Network Security &amp; Security Labs <span class="tag">./security-lab</span></h3>
+									<p>Hands-on labs with Wireshark, Nmap, and TryHackMe.</p>
+									<p class="tech"><b>tech:</b> Wireshark, Nmap, Zenmap, Masscan, TryHackMe</p>
+								</div>
+								<a class="explore" href="projects/network-security.html">explore &rarr;</a>
+							</li>
+							<li class="project" data-category="application">
+								<span class="pid">drwx 07</span>
+								<div>
+									<h3>TRACE &mdash; Crime Awareness &amp; Public Safety <span class="tag">./application</span></h3>
+									<p>A user-centered app concept for exploring public-safety information.</p>
+									<p class="tech"><b>tech:</b> Figma</p>
+									<a class="thumb" href="projects/trace-app.html" tabindex="-1" aria-hidden="true"><img src="images/trace-logo.png" alt="" /></a>
+								</div>
+								<a class="explore" href="projects/trace-app.html">explore &rarr;</a>
+							</li>
+						</ul>
+					</section>
 
-		<!-- Expertise -->
-		<section class="band band--alt" id="expertise" aria-labelledby="expertise-title">
-			<div class="wrap split">
-				<div class="split-head reveal">
-					<p class="kicker">Expertise</p>
-					<h2 id="expertise-title">Areas of <em>Expertise</em></h2>
-				</div>
-				<div>
-					<ol class="index">
-						<li class="reveal"><div><h3>Vulnerability Management</h3><p>Identifying vulnerabilities, prioritizing remediation, coordinating patch deployment, and validating remediation progress across managed endpoints.</p></div></li>
-						<li class="reveal"><div><h3>Endpoint Security</h3><p>Managing endpoint updates and patch deployment workflows to improve device security while minimizing disruption to business operations.</p></div></li>
-						<li class="reveal"><div><h3>Security Risk Assessments</h3><p>Evaluating business requirements, data sensitivity, security implications, and potential risks to support informed security decisions.</p></div></li>
-						<li class="reveal"><div><h3>Security Documentation</h3><p>Developing standard operating procedures, policies, standards, and repeatable workflows that support security and compliance activities.</p></div></li>
-						<li class="reveal"><div><h3>Networking &amp; Security Tools</h3><p>Applying networking fundamentals, security concepts, and diagnostic tools to investigate technical issues and support secure environments.</p></div></li>
-						<li class="reveal"><div><h3>Scripting &amp; Security Automation</h3><p>Using programming and automation concepts to improve workflows, support technical problem-solving, and develop security-focused applications.</p></div></li>
-					</ol>
+					<!-- Toolkit -->
+					<section class="term-section" id="toolkit" aria-labelledby="toolkit-title">
+						<span id="expertise"></span>
+						<h2 id="toolkit-title" class="visually-hidden">Toolkit</h2>
+						<p class="section-prompt"><span class="prompt">$</span> cat ./toolkit.txt</p>
+						<div class="toolkit">
+							<div>
+								<a class="section-link" href="#toolkit">skills &amp; tools &rarr;</a>
+								<p class="kicker">Areas of Expertise</p>
+								<ul>
+									<li><strong>Vulnerability Management</strong> &mdash; Identifying vulnerabilities, prioritizing remediation, coordinating patch deployment, and validating remediation progress across managed endpoints.</li>
+									<li><strong>Endpoint Security</strong> &mdash; Managing endpoint updates and patch deployment workflows to improve device security while minimizing disruption to business operations.</li>
+									<li><strong>Security Risk Assessments</strong> &mdash; Evaluating business requirements, data sensitivity, security implications, and potential risks to support informed security decisions.</li>
+									<li><strong>Security Documentation</strong> &mdash; Developing standard operating procedures, policies, standards, and repeatable workflows that support security and compliance activities.</li>
+									<li><strong>Networking &amp; Security Tools</strong> &mdash; Applying networking fundamentals, security concepts, and diagnostic tools to investigate technical issues and support secure environments.</li>
+									<li><strong>Scripting &amp; Security Automation</strong> &mdash; Using programming and automation concepts to improve workflows, support technical problem-solving, and develop security-focused applications.</li>
+								</ul>
+							</div>
+							<div>
+								<p class="section-prompt"><span class="prompt">$</span> ls ./toolkit</p>
+								<ul class="tree">
+									<li><span class="branch" aria-hidden="true">&vdash;</span><span class="key">Vulnerability Management</span><span class="val">ManageEngine Endpoint Central</span></li>
+									<li><span class="branch" aria-hidden="true">&vdash;</span><span class="key">Network Analysis</span><span class="val">Wireshark, Nmap</span></li>
+									<li><span class="branch" aria-hidden="true">&vdash;</span><span class="key">Security Monitoring</span><span class="val">Snort</span></li>
+									<li><span class="branch" aria-hidden="true">&vdash;</span><span class="key">Programming</span><span class="val">Python, Flask</span></li>
+									<li><span class="branch" aria-hidden="true">&vdash;</span><span class="key">Compliance</span><span class="val">CJIS, HIPAA, CIS Controls</span></li>
+									<li><span class="branch" aria-hidden="true">&vdash;</span><span class="key">Cloud</span><span class="val">Google Cloud Platform</span></li>
+								</ul>
+								<div class="tools" style="margin-top:2rem">
+									<p class="kicker">Tools &amp; Technologies</p>
+									<dl>
+										<div class="row-t"><dt>Endpoint &amp; Vulnerability</dt><dd><span>ManageEngine Endpoint Central</span><span>CrowdStrike Falcon</span><span>Cymulate</span><span>Nessus</span></dd></div>
+										<div class="row-t"><dt>Network &amp; Traffic</dt><dd><span>Wireshark</span><span>Nmap</span><span>Zenmap</span><span>Masscan</span><span>Snort</span><span>iptables</span><span>pfSense</span></dd></div>
+										<div class="row-t"><dt>Identity, Access &amp; Email</dt><dd><span>Okta</span><span>Zscaler</span><span>Barracuda Email Security</span></dd></div>
+										<div class="row-t"><dt>Cloud &amp; Automation</dt><dd><span>Google Cloud Platform</span><span>Python</span><span>PowerShell</span><span>Microsoft Power Platform</span><span>Microsoft 365</span></dd></div>
+										<div class="row-t"><dt>Application Security &amp; Design</dt><dd><span>Flask</span><span>TOTP / MFA</span><span>QR Codes</span><span>Figma</span></dd></div>
+										<div class="row-t"><dt>IT Service &amp; Learning</dt><dd><span>ServiceNow ITSM</span><span>TryHackMe</span></dd></div>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</section>
 
-					<div class="tools reveal">
-						<h3>Tools &amp; <em>Technologies</em></h3>
-						<dl>
-							<div class="row-t"><dt>Endpoint &amp; Vulnerability</dt><dd><span>ManageEngine Endpoint Central</span><span>CrowdStrike Falcon</span><span>Cymulate</span><span>Nessus</span></dd></div>
-							<div class="row-t"><dt>Network &amp; Traffic</dt><dd><span>Wireshark</span><span>Nmap</span><span>Zenmap</span><span>Masscan</span><span>Snort</span><span>iptables</span><span>pfSense</span></dd></div>
-							<div class="row-t"><dt>Identity, Access &amp; Email</dt><dd><span>Okta</span><span>Zscaler</span><span>Barracuda Email Security</span></dd></div>
-							<div class="row-t"><dt>Cloud &amp; Automation</dt><dd><span>Google Cloud Platform</span><span>Python</span><span>PowerShell</span><span>Microsoft Power Platform</span><span>Microsoft 365</span></dd></div>
-							<div class="row-t"><dt>Application Security &amp; Design</dt><dd><span>Flask</span><span>TOTP / MFA</span><span>QR Codes</span><span>Figma</span></dd></div>
-							<div class="row-t"><dt>IT Service &amp; Learning</dt><dd><span>ServiceNow ITSM</span><span>TryHackMe</span></dd></div>
-						</dl>
-					</div>
-				</div>
-			</div>
-		</section>
+					<!-- Experience -->
+					<section class="term-section" id="experience" aria-labelledby="experience-title">
+						<h2 id="experience-title" class="visually-hidden">Experience</h2>
+						<p class="section-prompt"><span class="prompt">$</span> cat ./experience.txt</p>
+						<a class="section-link" href="about.html">about me &rarr;</a>
+						<p>My professional experience has allowed me to work across several areas of information technology, including enterprise endpoint management, identity and access management, technical support, cloud technologies, and security operations.</p>
+						<ol class="exp-list">
+							<li>
+								<span class="when">&gt; current role</span>
+								<div>
+									<h3>IT End User Computing Technician</h3>
+									<span class="org">Genesee County</span>
+									<p class="exp-note">- Managed 1,392 endpoints.</p>
+									<p class="exp-note">- Reduced identified vulnerabilities from 1,050 to 105 (90%).</p>
+									<p>I contribute to vulnerability remediation, patch management, security documentation, risk assessment activities, and security control validation. I also work with security exception reviews and support compliance and audit-readiness efforts.</p>
+								</div>
+							</li>
+							<li>
+								<span class="when">&gt; previously</span>
+								<div>
+									<h3>IT Co-op</h3>
+									<span class="org">Nexteer Automotive</span>
+									<p>Gained experience with identity and access management, enterprise endpoint deployment, incident triage, ServiceNow, and Microsoft 365 technologies.</p>
+								</div>
+							</li>
+							<li>
+								<span class="when">&gt; program</span>
+								<div>
+									<h3>Google Cloud Career Jumpstart Program</h3>
+									<span class="org">Participant</span>
+									<p>Gained hands-on exposure to cloud resources, access controls, cloud application deployment, and infrastructure security concepts.</p>
+								</div>
+							</li>
+							<li>
+								<span class="when">&gt; education</span>
+								<div>
+									<h3>M.S. in Cybersecurity</h3>
+									<span class="org">University of Michigan-Flint &middot; In progress, expected December 2026</span>
+								</div>
+							</li>
+							<li>
+								<span class="when">&gt; education</span>
+								<div>
+									<h3>B.S. in Cybersecurity</h3>
+									<span class="org">University of Michigan-Flint &middot; Minor in Computer Science</span>
+									<p><a class="link-arrow" href="assets/files/UM-Flint-Degree.pdf" target="_blank" rel="noopener noreferrer">View Degree &rarr;</a></p>
+								</div>
+							</li>
+						</ol>
+					</section>
 
-		<!-- Selected work -->
-		<section class="band" id="projects" aria-labelledby="projects-title">
-			<div class="wrap">
-				<div class="work-head">
-					<div class="reveal">
-						<p class="kicker">Selected Work</p>
-						<h2 id="projects-title">Featured <em>Projects</em></h2>
-					</div>
-				</div>
-				<div class="panels">
-					<article class="panel reveal">
-						<div class="panel-art"><span class="numeral" aria-hidden="true">I</span><a class="thumb thumb--wide" href="projects/vulnerability-remediation.html" tabindex="-1" aria-hidden="true"><img src="images/image.png" alt="" /></a><span class="cat">Case Study · Endpoint Security</span></div>
-						<div class="panel-body">
-							<ul class="tags"><li>Vulnerability Management</li><li>Patch Management</li></ul>
-							<h3>Enterprise Vulnerability Remediation</h3>
-							<p>Supported vulnerability remediation and endpoint patch management by organizing deployments, coordinating testing, scheduling maintenance windows, and reviewing remediation results using ManageEngine Endpoint Central.</p>
-							<ul class="panel-stats"><li><strong>1,392</strong>Endpoints</li><li><strong>1,050 → 105</strong>Vulnerabilities</li><li><strong>90%</strong>Reduction</li></ul>
-							<a class="link-arrow" href="projects/vulnerability-remediation.html">Case Study<span class="visually-hidden">: Enterprise Vulnerability Remediation</span></a>
+					<!-- Certs -->
+					<section class="term-section" id="certs" aria-labelledby="certs-title">
+						<h2 id="certs-title" class="visually-hidden">Certifications</h2>
+						<p class="section-prompt"><span class="prompt">$</span> ls ./certs</p>
+						<div class="cert-card">
+							<h3>CompTIA Security+ (SY0-701)</h3>
+							<dl>
+								<dt>Issued by</dt><dd>CompTIA</dd>
+								<dt>Earned</dt><dd>September 18, 2026</dd>
+								<dt>Expires</dt><dd>September 18, 2029</dd>
+							</dl>
+							<a class="link-arrow" href="assets/files/CompTIA-Security-Plus-Certificate.pdf" target="_blank" rel="noopener noreferrer">Verify at CompTIA &rarr;</a>
 						</div>
-					</article>
-					<article class="panel reveal">
-						<div class="panel-art"><span class="numeral" aria-hidden="true">II</span><span class="cat">Case Study · Risk</span></div>
-						<div class="panel-body">
-							<ul class="tags"><li>Risk Assessment</li><li>Removable Media</li></ul>
-							<h3>Security Risk Assessment &amp; USB Exceptions</h3>
-							<p>Evaluated business justifications, data sensitivity, data transfer methods, and potential risks to support informed decisions about removable-media exception requests.</p>
-							<a class="link-arrow" href="projects/security-risk-assessment.html">Case Study<span class="visually-hidden">: Security Risk Assessment &amp; USB Exceptions</span></a>
-						</div>
-					</article>
-					<article class="panel reveal">
-						<div class="panel-art"><span class="numeral" aria-hidden="true">III</span><span class="cat">Documentation · Governance</span></div>
-						<div class="panel-body">
-							<ul class="tags"><li>SOPs</li><li>Policies &amp; Standards</li></ul>
-							<h3>Security SOPs &amp; Policy Development</h3>
-							<p>Developed structured security documentation, including standard operating procedures, policies, standards, and repeatable workflows to support consistent security practices.</p>
-							<a class="link-arrow" href="projects/security-sops-policy-development.html">View Documentation<span class="visually-hidden">: Security SOPs &amp; Policy Development</span></a>
-						</div>
-					</article>
-					<article class="panel reveal">
-						<div class="panel-art"><span class="numeral" aria-hidden="true">IV</span><span class="cat">Compliance · Controls</span></div>
-						<div class="panel-body">
-							<ul class="tags"><li>Control Mapping</li><li>Evidence Planning</li></ul>
-							<h3>Security Controls &amp; Compliance</h3>
-							<p>Demonstrate knowledge of security controls, documentation, and compliance workflows through sanitized examples of control mapping, evidence planning, and remediation tracking.</p>
-							<a class="link-arrow" href="projects/security-compliance.html">View Project<span class="visually-hidden">: Security Controls &amp; Compliance</span></a>
-						</div>
-					</article>
-					<article class="panel reveal">
-						<div class="panel-art"><span class="numeral" aria-hidden="true">V</span><a class="thumb" href="projects/cryptkey-mfa-application.html" tabindex="-1" aria-hidden="true"><img src="images/cryptkey-logo.png" alt="" /></a><span class="cat">Application Security</span></div>
-						<div class="panel-body">
-							<ul class="tags"><li>Python</li><li>Flask</li><li>MFA</li></ul>
-							<h3>CryptKey — MFA Application</h3>
-							<p>Built a security-focused application using Python and Flask to explore authentication workflows, time-based one-time passwords, QR-code scanning, and multi-factor authentication.</p>
-							<a class="link-arrow" href="projects/cryptkey-mfa-application.html">View Project<span class="visually-hidden">: CryptKey — MFA Application</span></a>
-						</div>
-					</article>
-					<article class="panel reveal">
-						<div class="panel-art"><span class="numeral" aria-hidden="true">VI</span><span class="cat">Labs · Network Security</span></div>
-						<div class="panel-body">
-							<ul class="tags"><li>Wireshark</li><li>Nmap</li><li>TryHackMe</li></ul>
-							<h3>Network Security &amp; Security Labs</h3>
-							<p>Showcase hands-on networking and security analysis using tools such as Wireshark, Nmap, and other security utilities, alongside academic labs and TryHackMe learning.</p>
-							<a class="link-arrow" href="projects/network-security.html">View Lab<span class="visually-hidden">: Network Security &amp; Security Labs</span></a>
-						</div>
-					</article>
-					<article class="panel reveal">
-						<div class="panel-art"><span class="numeral" aria-hidden="true">VII</span><a class="thumb" href="projects/trace-app.html" tabindex="-1" aria-hidden="true"><img src="images/trace-logo.png" alt="" /></a><span class="cat">User Research · In Progress</span></div>
-						<div class="panel-body">
-							<ul class="tags"><li>User Research</li><li>Figma</li><li>Prototype</li></ul>
-							<h3>TRACE — Crime Awareness &amp; Public Safety</h3>
-							<p>TRACE is a user-centered application concept designed to make publicly available crime and public-safety information easier to find, understand, and explore.</p>
-							<a class="link-arrow" href="projects/trace-app.html">View Project<span class="visually-hidden">: TRACE — Crime Awareness &amp; Public Safety</span></a>
-						</div>
-					</article>
-				</div>
-			</div>
-		</section>
+					</section>
 
-		<!-- Experience -->
-		<section class="band band--alt" id="experience" aria-labelledby="experience-title">
-			<div class="wrap split">
-				<div class="split-head reveal">
-					<p class="kicker">Experience</p>
-					<h2 id="experience-title">Professional <em>Background</em></h2>
-					<p>My professional experience has allowed me to work across several areas of information technology, including enterprise endpoint management, identity and access management, technical support, cloud technologies, and security operations.</p>
-				</div>
-				<ol class="timeline">
-					<li class="reveal-x">
-						<span class="when">Current Role</span>
-						<div class="what">
-							<h3>IT End User Computing Technician</h3>
-							<span class="org">Genesee County</span>
-							<p>I contribute to vulnerability remediation, patch management, security documentation, risk assessment activities, and security control validation. I also work with security exception reviews and support compliance and audit-readiness efforts.</p>
+					<!-- Writing / Offline Theory -->
+					<section class="term-section" id="writing" aria-labelledby="writing-title">
+						<h2 id="writing-title" class="visually-hidden">Writing</h2>
+						<p class="section-prompt"><span class="prompt">$</span> open ./offline-theory</p>
+						<div class="writing-card">
+							<p>Offline Theory is my independent publication on cybersecurity, technology, and internet culture.</p>
+							<a class="link-arrow" href="https://offlinetheory.github.io" target="_blank" rel="noopener noreferrer">offlinetheory.github.io &rarr;</a>
 						</div>
-					</li>
-					<li class="reveal-x">
-						<span class="when">Previously</span>
-						<div class="what">
-							<h3>IT Co-op</h3>
-							<span class="org">Nexteer Automotive</span>
-							<p>Gained experience with identity and access management, enterprise endpoint deployment, incident triage, ServiceNow, and Microsoft 365 technologies.</p>
-						</div>
-					</li>
-					<li class="reveal-x">
-						<span class="when">Program</span>
-						<div class="what">
-							<h3>Google Cloud Career Jumpstart Program</h3>
-							<span class="org">Participant</span>
-							<p>Gained hands-on exposure to cloud resources, access controls, cloud application deployment, and infrastructure security concepts.</p>
-						</div>
-					</li>
-				</ol>
-			</div>
-			<div class="wrap">
-				<h3 class="highlights-title reveal">Professional <em>Highlights</em></h3>
-				<div class="highlights">
-					<div class="reveal">
-						<a class="shot" href="projects/vulnerability-remediation.html"><img src="images/image.png" alt="Vulnerability remediation workstation" /></a>
-						<div class="fig">1,050 <small>to</small> 105</div>
-						<p>Applied vulnerability prioritization and remediation practices to help reduce identified vulnerabilities across 1,392 endpoints from 1,050 to 105. Focused on remediation tracking, patch management, and validating improvements.</p>
-					</div>
-					<div class="reveal">
-						<h4><a href="projects/security-risk-assessment.html">Risk Assessment &amp; Exception Reviews</a></h4>
-						<p>Supported risk assessment and exception reviews by evaluating business needs, data sensitivity, and potential security risks.</p>
-					</div>
-					<div class="reveal">
-						<h4><a href="projects/security-compliance.html">Documentation &amp; Control Reviews</a></h4>
-						<p>Organized security documentation and control-review workflows, including evidence planning, tracking gaps, and documenting remediation activities.</p>
-					</div>
-				</div>
-			</div>
-		</section>
+					</section>
 
-		<!-- Education -->
-		<section class="band" id="education" aria-labelledby="education-title">
-			<div class="wrap">
-				<p class="kicker reveal">Education</p>
-				<h2 id="education-title" class="reveal" style="margin-bottom:clamp(2.5rem,6vw,4.5rem)">Education &amp; <em>Certifications</em></h2>
-				<div class="edu">
-					<article class="reveal">
-						<a class="doc" href="assets/files/UM-Flint-Degree.pdf" target="_blank" rel="noopener noreferrer"><img src="images/degree-preview.png" alt="Bachelor of Science in Cybersecurity degree" /></a>
-						<div>
-							<p class="kicker kicker--plain" style="margin-bottom:1rem">Degree</p>
-							<h3>Bachelor of Science in Cybersecurity</h3>
-							<p>University of Michigan–Flint<br />Minor in Computer Science</p>
-							<a class="link-arrow" href="assets/files/UM-Flint-Degree.pdf" target="_blank" rel="noopener noreferrer">View Degree</a>
-						</div>
-					</article>
-					<article class="reveal">
-						<a class="doc" href="assets/files/CompTIA-Security-Plus-Certificate.pdf" target="_blank" rel="noopener noreferrer"><img src="images/security-plus-preview.png" alt="CompTIA Security+ certification" /></a>
-						<div>
-							<p class="kicker kicker--plain" style="margin-bottom:1rem">Certification</p>
-							<h3>CompTIA Security+</h3>
-							<p>Professional certification demonstrating foundational cybersecurity knowledge and skills.</p>
-							<a class="link-arrow" href="assets/files/CompTIA-Security-Plus-Certificate.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
-						</div>
-					</article>
+					<!-- Activity log -->
+					<section class="term-section" id="activity" aria-labelledby="activity-title">
+						<h2 id="activity-title" class="visually-hidden">Activity Log</h2>
+						<p class="section-prompt"><span class="prompt">$</span> cat ./activity.log</p>
+						<ul class="log">
+							<li><span class="log-tag">[certification]</span><span>CompTIA Security+ (SY0-701) <span class="dim">&mdash; earned September 18, 2026</span></span></li>
+							<li><span class="log-tag">[education]</span><span>M.S. in Cybersecurity, UM-Flint <span class="dim">&mdash; in progress, expected Dec 2026</span></span></li>
+							<li><span class="log-tag">[education]</span><span>B.S. in Cybersecurity, University of Michigan-Flint <span class="dim">&mdash; Minor in Computer Science</span></span></li>
+							<li><span class="log-tag">[program]</span><span>Google Cloud Career Jumpstart Program <span class="dim">&mdash; Participant</span></span></li>
+							<li><span class="log-tag">[project]</span><span>Enterprise Vulnerability Remediation <span class="dim">&mdash; flagship case study</span></span></li>
+							<li><span class="log-tag">[project]</span><span>Security Risk Assessment &amp; USB Exceptions</span></li>
+							<li><span class="log-tag">[project]</span><span>Security SOPs &amp; Policy Development</span></li>
+							<li><span class="log-tag">[project]</span><span>Security Controls &amp; Compliance</span></li>
+							<li><span class="log-tag">[project]</span><span>CryptKey &mdash; MFA Application</span></li>
+							<li><span class="log-tag">[lab]</span><span>Network Security &amp; Security Labs <span class="dim">&mdash; Wireshark, Nmap, TryHackMe</span></span></li>
+							<li><span class="log-tag">[project]</span><span>TRACE &mdash; Crime Awareness &amp; Public Safety</span></li>
+							<li><span class="log-tag">[writing]</span><span>Offline Theory <span class="dim">&mdash; independent publication</span></span></li>
+						</ul>
+					</section>
+
+					<!-- Contact -->
+					<section class="term-section contact" id="contact" aria-labelledby="contact-title">
+						<h2 id="contact-title" class="visually-hidden">Contact</h2>
+						<p class="section-prompt"><span class="prompt">$</span> ./contact.sh <span class="dim"># Let&rsquo;s Connect</span></p>
+						<p>Whether you&rsquo;re recruiting for a cybersecurity role, interested in my projects, or looking to connect with another technology professional, I&rsquo;d love to hear from you.</p>
+						<p>I&rsquo;m interested in opportunities where I can apply my cybersecurity, vulnerability management, and technical problem-solving skills to help organizations strengthen their security posture.</p>
+						<a class="email-big" href="mailto:jamiah_mcq@yahoo.com">jamiah_mcq@yahoo.com</a>
+						<ul class="contact-links">
+							<li>Flint, MI</li>
+							<li><a href="https://www.linkedin.com/in/jamiahmcquiller/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+							<li><a href="https://github.com/jamiahmcquiller" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+							<li><a href="https://tryhackme.com/p/jamiahm" target="_blank" rel="noopener noreferrer">TryHackMe</a></li>
+							<li><a href="https://offlinetheory.github.io" target="_blank" rel="noopener noreferrer">Offline Theory</a></li>
+							<li><a href="assets/files/Jamiah-McQuiller-Resume.pdf" target="_blank" rel="noopener noreferrer">R&eacute;sum&eacute;</a></li>
+						</ul>
+					</section>
 				</div>
 			</div>
-		</section>
-
-		<!-- Contact -->
-		<section class="band band--black contact" id="contact" aria-labelledby="contact-title">
-			<div class="wrap">
-				<p class="kicker reveal">Contact</p>
-				<h2 id="contact-title" class="reveal">Let's <em>Connect</em></h2>
-				<p class="reveal">I'm interested in opportunities where I can apply my cybersecurity, vulnerability management, and technical problem-solving skills to help organizations strengthen their security posture.</p>
-				<p class="reveal">Whether you're recruiting for a cybersecurity role, interested in my projects, or looking to connect with another technology professional, I'd love to hear from you.</p>
-				<a class="email reveal" href="mailto:jamiah_mcq@yahoo.com">jamiah_mcq@yahoo.com</a>
-				<ul class="actions reveal" style="justify-content:center">
-					<li><a href="mailto:jamiah_mcq@yahoo.com" class="btn btn--gold">Email Me</a></li>
-					<li><a href="assets/files/Jamiah-McQuiller-Resume.pdf" class="btn btn--light" target="_blank" rel="noopener noreferrer">View My Résumé</a></li>
-				</ul>
-				<ul class="links reveal">
-					<li>Flint, MI</li>
-					<li><a href="https://www.linkedin.com/in/jamiahmcquiller/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-					<li><a href="https://github.com/jamiahmcquiller" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-				</ul>
-			</div>
-		</section>
+		</div>
 	</main>
 
 	<footer class="site-footer">
 		<div class="wrap">
-			<div class="footer-grid">
-				<div>
-					<a class="wordmark" href="index.html">Jamiah <span>McQuiller</span></a>
-					<p>I'm interested in opportunities where I can apply my cybersecurity, vulnerability management, and technical problem-solving skills to help organizations strengthen their security posture.</p>
-				</div>
-				<div>
-					<h2>Selected Work</h2>
-					<ul><li><a href="projects/vulnerability-remediation.html">Vulnerability Remediation</a></li><li><a href="projects/security-risk-assessment.html">Security Risk Assessment</a></li><li><a href="projects/security-sops-policy-development.html">Security SOPs &amp; Policies</a></li><li><a href="projects/security-compliance.html">Security Controls &amp; Compliance</a></li><li><a href="projects/cryptkey-mfa-application.html">CryptKey MFA Application</a></li><li><a href="projects/network-security.html">Network Security &amp; Labs</a></li><li><a href="projects/trace-app.html">TRACE — Public Safety App</a></li></ul>
-				</div>
-				<div>
-					<h2>Connect</h2>
-					<ul>
-						<li><a href="mailto:jamiah_mcq@yahoo.com">jamiah_mcq@yahoo.com</a></li>
-						<li>Flint, MI</li>
-						<li><a href="https://www.linkedin.com/in/jamiahmcquiller/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-						<li><a href="https://github.com/jamiahmcquiller" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-						<li><a href="https://tryhackme.com/p/jamiahm" target="_blank" rel="noopener noreferrer">TryHackMe</a></li>
-						<li><a href="assets/files/Jamiah-McQuiller-Resume.pdf" target="_blank" rel="noopener noreferrer">Résumé (PDF)</a></li>
-						<li><a href="about.html">About Me</a></li>
-					</ul>
-				</div>
+			<div>
+				<a class="logo-box" href="index.html" aria-label="Jamiah McQuiller, home">JM</a>
+				<span>&nbsp; &copy; 2026 Jamiah McQuiller</span>
 			</div>
-			<div class="footer-bottom"><span>&copy; 2026 Jamiah McQuiller. All rights reserved.</span><span>Cybersecurity &amp; Vulnerability Management</span></div>
+			<ul class="footer-links">
+				<li><a href="mailto:jamiah_mcq@yahoo.com">jamiah_mcq@yahoo.com</a></li>
+				<li><a href="https://www.linkedin.com/in/jamiahmcquiller/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+				<li><a href="https://github.com/jamiahmcquiller" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+				<li><a href="https://offlinetheory.github.io" target="_blank" rel="noopener noreferrer">Offline Theory</a></li>
+				<li><a href="assets/files/Jamiah-McQuiller-Resume.pdf" target="_blank" rel="noopener noreferrer">R&eacute;sum&eacute;</a></li>
+			</ul>
 		</div>
 	</footer>
+
+	<!-- Terminal output panel -->
+	<div class="term-output" id="term-output" aria-live="polite">
+		<div class="term-output-inner">
+			<div class="out-head"><span>jamiah@portfolio:~ &mdash; output</span><button type="button" id="term-close">close</button></div>
+			<div id="term-output-body"></div>
+		</div>
+	</div>
+
+	<!-- Fixed bottom terminal bar -->
+	<div class="term-bar-bottom">
+		<div class="wrap">
+			<span class="prompt">jamiah@portfolio:~$</span>
+			<label class="visually-hidden" for="term-input">Terminal command</label>
+			<input id="term-input" type="text" placeholder="type help" autocomplete="off" spellcheck="false" />
+			<div class="term-cmds" role="group" aria-label="Quick commands">
+				<button type="button" data-cmd="help">help</button>
+				<button type="button" data-cmd="about">about</button>
+				<button type="button" data-cmd="projects">projects</button>
+				<button type="button" data-cmd="experience">experience</button>
+				<button type="button" data-cmd="certifications">certifications</button>
+				<button type="button" data-cmd="writing">writing</button>
+				<button type="button" data-cmd="contact">contact</button>
+				<button type="button" data-cmd="clear">clear</button>
+			</div>
+		</div>
+	</div>
 	<script src="assets/js/site.js"></script>
 </body>
 </html>
