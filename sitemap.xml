@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://jamiahmcquiller.github.io/</loc>
+  </url>
+  <url>
+    <loc>https://jamiahmcquiller.github.io/about.html</loc>
+  </url>
+  <url>
+    <loc>https://jamiahmcquiller.github.io/projects/cryptkey-mfa-application.html</loc>
+  </url>
+  <url>
+    <loc>https://jamiahmcquiller.github.io/projects/network-security.html</loc>
+  </url>
+  <url>
+    <loc>https://jamiahmcquiller.github.io/projects/security-compliance.html</loc>
+  </url>
+  <url>
+    <loc>https://jamiahmcquiller.github.io/projects/security-risk-assessment.html</loc>
+  </url>
+  <url>
+    <loc>https://jamiahmcquiller.github.io/projects/security-sops-policy-development.html</loc>
+  </url>
+  <url>
+    <loc>https://jamiahmcquiller.github.io/projects/trace-app.html</loc>
+  </url>
+  <url>
+    <loc>https://jamiahmcquiller.github.io/projects/vulnerability-remediation.html</loc>
+  </url>
+</urlset>

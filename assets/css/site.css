@@ -158,6 +158,13 @@ code { font-size: .88em; padding: .05em .35em; background: var(--panel-2); borde
 @media (max-width: 900px) { .stats { grid-template-columns: repeat(2, 1fr); } .stat:nth-child(2n) { border-right: 0; } .stat { border-bottom: 1px solid var(--line-soft); } .stat:last-child { grid-column: 1 / -1; border-right: 0; } }
 @media (max-width: 520px) { .stats { grid-template-columns: 1fr; } .stat { border-right: 0; } }
 
+/* ---------- Recruiter strip + experience tiers ---------- */
+.glance { margin-top: 2rem; }
+.glance .section-prompt { margin-bottom: 1rem; }
+.tree .tier { color: var(--green-dim); font-size: .78rem; white-space: nowrap; }
+.note-inline { color: var(--muted); font-size: .82rem; }
+@media (max-width: 700px) { .tree .tier { white-space: normal; } }
+
 /* ---------- Sections ---------- */
 .term-section { padding: clamp(2.5rem, 6vw, 4rem) 0; border-top: 1px dashed var(--line-soft); }
 .term-section:first-of-type { border-top: 0; }

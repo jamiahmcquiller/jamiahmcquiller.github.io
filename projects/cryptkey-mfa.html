@@ -4,7 +4,18 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>CryptKey MFA Application | Jamiah McQuiller</title>
-	<meta name="description" content="CryptKey, a Python and Flask security application exploring authentication and multi-factor authentication." />
+	<meta name="description" content="CryptKey, a team-based academic Python and Flask project exploring multi-factor authentication, TOTP, and QR-code login." />
+	<meta name="robots" content="noindex" />
+	<meta property="og:title" content="CryptKey MFA Application | Jamiah McQuiller" />
+	<meta property="og:description" content="CryptKey, a team-based academic Python and Flask project exploring multi-factor authentication, TOTP, and QR-code login." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://jamiahmcquiller.github.io/projects/cryptkey-mfa-application.html" />
+	<meta property="og:image" content="https://jamiahmcquiller.github.io/images/og-image.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="CryptKey MFA Application | Jamiah McQuiller" />
+	<meta name="twitter:description" content="CryptKey, a team-based academic Python and Flask project exploring multi-factor authentication, TOTP, and QR-code login." />
+	<meta name="twitter:image" content="https://jamiahmcquiller.github.io/images/og-image.png" />
+	<link rel="canonical" href="https://jamiahmcquiller.github.io/projects/cryptkey-mfa-application.html" />
 	<meta name="theme-color" content="#0a0a0a" />
 	<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
 	<link rel="stylesheet" href="../assets/css/site.css" />
@@ -110,10 +121,10 @@
                     thorough testing are important parts of building a
                     dependable authentication system.
                 </p>
-<p><em>
-                    This page should be updated to reflect the verified
-                    implementation status of CryptKey before publication.
-                </em></p>
+<div class="project-callout">
+<p><strong>Superseded page:</strong> This draft page is kept for reference only. The full, verified CryptKey case study is at <a href="cryptkey-mfa-application.html">CryptKey &mdash; MFA Application</a>.</p>
+<p><strong>Verified implementation status</strong> (checked against the public repository, last commit Dec 16, 2024): CryptKey is a Flask academic prototype with working registration, TOTP generation and validation via <code>pyotp</code>, QR-code login, email verification, and a SocketIO approval flow. Camera-based QR scanning, push notifications, and biometric login were not implemented in the committed code &mdash; Touch ID is simulated, and HTTPS/TLS and password hashing remain outstanding. The repository is dormant since December 2024 and is presented as academic coursework, not a production authenticator.</p>
+</div>
 <hr/>
 <ul class="actions">
 <li><a class="button primary" href="../index.html#projects">Back to Projects</a></li>

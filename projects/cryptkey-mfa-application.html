@@ -3,8 +3,18 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>CryptKey — MFA Application | Jamiah McQuiller</title>
-	<meta name="description" content="CryptKey is an academic cybersecurity project exploring multi-factor authentication, TOTP generation, QR-code scanning, and secure authentication workflows using Python and Flask." />
+	<title>CryptKey — MFA Application (Python &amp; Flask) | Jamiah McQuiller</title>
+	<meta name="description" content="CryptKey is a team-based academic project: a Python and Flask multi-factor authentication app exploring TOTP, QR-code login, and secure authentication workflows." />
+	<meta property="og:title" content="CryptKey — MFA Application (Python &amp; Flask) | Jamiah McQuiller" />
+	<meta property="og:description" content="CryptKey is a team-based academic project: a Python and Flask multi-factor authentication app exploring TOTP, QR-code login, and secure authentication workflows." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://jamiahmcquiller.github.io/projects/cryptkey-mfa-application.html" />
+	<meta property="og:image" content="https://jamiahmcquiller.github.io/images/og-image.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="CryptKey — MFA Application (Python &amp; Flask) | Jamiah McQuiller" />
+	<meta name="twitter:description" content="CryptKey is a team-based academic project: a Python and Flask multi-factor authentication app exploring TOTP, QR-code login, and secure authentication workflows." />
+	<meta name="twitter:image" content="https://jamiahmcquiller.github.io/images/og-image.png" />
+	<link rel="canonical" href="https://jamiahmcquiller.github.io/projects/cryptkey-mfa-application.html" />
 	<meta name="theme-color" content="#0a0a0a" />
 	<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
 	<link rel="stylesheet" href="../assets/css/site.css" />
@@ -129,10 +139,12 @@
 				<p class="project-note">Academic Project | Authentication &amp; Application Security</p>
 <h1>CryptKey — MFA Application</h1>
 <p>
-                        Built a security-focused application using Python and Flask to explore
-                        authentication workflows and multi-factor authentication concepts.
-                        The project focused on time-based one-time passwords, QR-code scanning,
-                        user registration, security-key management, and validation workflows.
+                        CryptKey is a team-based academic project built with Python
+                        and Flask to explore authentication workflows and
+                        multi-factor authentication concepts. The project focused
+                        on time-based one-time passwords, QR-code login, user
+                        registration, security-key management, and validation
+                        workflows.
                     </p>
 <div class="project-tags">
 <span>Python</span>
@@ -174,10 +186,22 @@
                         workflows, and identify the security and testing considerations
                         involved in building an authentication application.
                     </div>
+<table class="meta-table">
+<tbody>
+<tr><th scope="row">Type</th><td>Academic project &middot; team-based</td></tr>
+<tr><th scope="row">Status</th><td>Prototype &mdash; repository dormant since Dec 2024</td></tr>
+<tr><th scope="row">Focus</th><td>Multi-factor authentication &middot; TOTP &middot; QR-code login</td></tr>
+<tr><th scope="row">Tools</th><td>Python, Flask, pyotp, SQLite</td></tr>
+</tbody>
+</table>
 <p class="project-note">
                         This was an academic prototype, not a production-ready authenticator
                         or a formally audited security product.
                     </p>
+</section>
+<section class="project-section">
+<h2>My Contributions</h2>
+<p>CryptKey was a team academic project; the public repository records commits from both teammates. The implementation work described on this page &mdash; registration and validation workflows, TOTP generation with <code>pyotp</code>, QR-code login, and the authentication screens &mdash; was built collaboratively, and the verified implementation status below describes what the committed code contains.</p>
 </section>
 <section class="project-section">
 <h2>Security Problem</h2>
@@ -192,7 +216,7 @@
                         CryptKey provided a way to examine these challenges through a
                         practical application. The project emphasized the relationship
                         between usability and security, including clear user flows for
-                        registering accounts, scanning QR codes, and validating authentication
+                        registering accounts, setting up QR-code login, and validating authentication
                         codes.
                     </p>
 </section>
@@ -216,11 +240,12 @@
                             </p>
 </div>
 <div class="project-card">
-<h3><span class="icon solid fa-qrcode"></span> QR-Code Scanning</h3>
+<h3><span class="icon solid fa-qrcode"></span> QR-Code Login</h3>
 <p>
-                                Used OpenCV and <code>pyzbar</code> to explore camera-based
-                                QR-code scanning and extraction of authentication setup
-                                information.
+                                The application generates a QR code encoding a
+                                login key, validated server-side. Camera-based
+                                QR-code scanning was not implemented in the
+                                committed code.
                             </p>
 </div>
 <div class="project-card">
@@ -280,9 +305,26 @@
 <li>
 <strong>Testing and refinement:</strong>
                             Individual components and their integration are evaluated
-                            to identify issues in scanning, validation, and usability.
+                            to identify issues in QR-code login, validation, and usability.
                         </li>
 </ol>
+<div class="table-wrapper">
+<table>
+<caption class="visually-hidden">Authentication flow as implemented in the committed code</caption>
+<thead>
+<tr><th scope="col">Step</th><th scope="col">What happens</th><th scope="col">Implemented as</th></tr>
+</thead>
+<tbody>
+<tr><td>1. Register</td><td>User creates an account</td><td>Flask route + SQLite user store</td></tr>
+<tr><td>2. TOTP secret issued</td><td>A per-user secret is generated</td><td><code>pyotp.random_base32()</code></td></tr>
+<tr><td>3. QR-code login</td><td>A QR code is generated for login</td><td>Python <code>qrcode</code> library; key validated server-side</td></tr>
+<tr><td>4. Code validation</td><td>A submitted code is checked</td><td><code>pyotp.TOTP.verify()</code></td></tr>
+<tr><td>5. Email verification</td><td>A 6-digit code is sent and checked</td><td>SMTP email verification</td></tr>
+<tr><td>6. Approval flow</td><td>An authentication request is approved or denied</td><td>SocketIO pending approvals</td></tr>
+</tbody>
+</table>
+</div>
+<p class="project-note"><strong>Verified against the public repository</strong> (last commit Dec 16, 2024). Camera-based QR scanning, push notifications, and biometric login are not in the committed code.</p>
 <div class="project-callout">
 <strong>Security consideration:</strong>
                         TOTP implementations depend on protecting the underlying shared
@@ -314,12 +356,16 @@
 <td>Time-based one-time password functionality.</td>
 </tr>
 <tr>
-<td>OpenCV</td>
-<td>Camera integration and image processing for QR scanning.</td>
+<td>qrcode</td>
+<td>QR-code generation for the login flow.</td>
 </tr>
 <tr>
-<td>pyzbar</td>
-<td>QR-code decoding.</td>
+<td>Flask-SocketIO</td>
+<td>Real-time authentication approval flow.</td>
+</tr>
+<tr>
+<td>SQLite</td>
+<td>Local user store for the prototype.</td>
 </tr>
 <tr>
 <td>HTML and CSS</td>
@@ -335,25 +381,25 @@
 </section>
 <section class="project-section">
 <h2>Testing and Validation</h2>
+<div class="project-callout">
+<strong>Verified implementation status</strong> (checked against the public repository, last commit Dec 16, 2024): CryptKey is a Flask academic prototype with working registration, TOTP generation and validation via <code>pyotp</code>, QR-code login, email verification, and a SocketIO approval flow. Camera-based QR scanning, push notifications, and biometric login were not implemented in the committed code &mdash; Touch ID is simulated, and HTTPS/TLS and password hashing remain outstanding. The repository is dormant since December 2024 and is presented here as academic coursework, not a production authenticator.
+</div>
 <p>
                         Testing focused on whether the main authentication components
-                        worked together as intended. The project checkpoint report
-                        documented the following preliminary results:
+                        worked together as intended. The committed code contains:
                     </p>
 <ul>
-<li>User registration functionality was reported as working.</li>
-<li>TOTP generation and validation were reported as functional.</li>
-<li>Camera-based QR scanning was reported as operational.</li>
-<li>
-                            The checkpoint report recorded approximately 90% QR-code
-                            scanning accuracy in the test cases used.
-                        </li>
+<li>User registration and login workflows.</li>
+<li>TOTP generation and validation via <code>pyotp</code>.</li>
+<li>QR-code login: the app generates a QR code encoding a login key, validated server-side.</li>
+<li>Email verification with 6-digit codes.</li>
+<li>A SocketIO approve/deny authentication flow.</li>
 </ul>
 <p>
-                        These are preliminary project-reported results, not the outcome
-                        of an independent security audit or a comprehensive test suite.
-                        The available checkpoint report does not establish that the
-                        application was penetration-tested or production-hardened.
+                        These are prototype features, not the outcome of an independent
+                        security audit or a comprehensive test suite. The code does not
+                        establish that the application was penetration-tested or
+                        production-hardened.
                     </p>
 <h3>Testing Areas to Consider</h3>
 <ul>
@@ -385,7 +431,7 @@
 <tbody>
 <tr>
 <td>Local encryption</td>
-<td>Partially implemented at the checkpoint.</td>
+<td>Reported as partially implemented in the checkpoint; not verified in the committed code.</td>
 <td>Verify encryption implementation, key management, and secure storage.</td>
 </tr>
 <tr>
@@ -394,13 +440,18 @@
 <td>Configure and verify secure transport for deployed services.</td>
 </tr>
 <tr>
+<td>Password storage</td>
+<td>Password hashing remains outstanding.</td>
+<td>Store only salted, hashed passwords; never store plaintext passwords.</td>
+</tr>
+<tr>
 <td>Push notifications</td>
-<td>Planned enhancement.</td>
+<td>Not implemented in the committed code; the approval flow uses SocketIO, not a push service.</td>
 <td>Design and test an authentication-request approval workflow.</td>
 </tr>
 <tr>
 <td>Biometric authentication</td>
-<td>Proposed future enhancement.</td>
+<td>Not implemented; Touch ID is simulated in the code.</td>
 <td>Evaluate platform-supported biometric APIs and fallback methods.</td>
 </tr>
 <tr>
@@ -417,9 +468,9 @@
 </table>
 </div>
 <p class="project-note">
-                        Status reflects the uploaded project checkpoint report. Review the
-                        current repository before publishing if the implementation has
-                        changed since that report.
+                        Status verified against the public repository (last commit Dec 16, 2024).
+                        Review the current repository before publishing if the implementation has
+                        changed since that check.
                     </p>
 </section>
 <section class="project-section">
@@ -427,7 +478,7 @@
 <ul>
 <li>Python application development with Flask.</li>
 <li>Authentication concepts and TOTP workflows.</li>
-<li>QR-code scanning and library integration.</li>
+<li>QR-code generation and login flow.</li>
 <li>Frontend and backend workflow integration.</li>
 <li>Application testing and troubleshooting.</li>
 <li>Security-focused UI/UX design.</li>

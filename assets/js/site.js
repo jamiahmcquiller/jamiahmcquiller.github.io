@@ -142,7 +142,7 @@
     saveHistory();
   }
 
-  var COMMANDS = ['help', 'whoami', 'about', 'projects', 'work', 'ls', 'experience', 'certifications', 'certs', 'writing', 'contact', 'clear'];
+  var COMMANDS = ['help', 'whoami', 'about', 'projects', 'work', 'ls', 'experience', 'certifications', 'certs', 'writing', 'contact', 'resume', 'clear'];
   function levenshtein(a, b) {
     var m = a.length, n = b.length;
     if (!m) return n;
@@ -179,6 +179,7 @@
     '  certifications credentials',
     '  writing        Offline Theory publication',
     '  contact        contact information',
+    '  resume         open the résumé (PDF)',
     '  clear          clear this output',
     '',
     'Tip: use ↑ / ↓ to recall previous commands.'
@@ -195,7 +196,7 @@
         show(promptLine + HELP);
         break;
       case 'whoami':
-        show(promptLine + 'Jamiah McQuiller\nCybersecurity & Vulnerability Management\nIT End User Computing Technician, Genesee County');
+        show(promptLine + 'Jamiah McQuiller\nCybersecurity Analyst | Vulnerability & Security Operations\nIT End User Computing Technician, Genesee County');
         break;
       case 'about':
         hide();
@@ -223,6 +224,10 @@
       case 'contact':
         hide();
         scrollToId('contact');
+        break;
+      case 'resume':
+        hide();
+        window.open((isCaseStudy ? '../' : '') + 'assets/files/Jamiah-McQuiller-Resume.pdf', '_blank', 'noopener');
         break;
       case 'clear':
         hide();
