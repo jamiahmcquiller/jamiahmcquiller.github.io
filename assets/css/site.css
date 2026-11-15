@@ -78,7 +78,7 @@ code { font-size: .88em; padding: .05em .35em; background: var(--panel-2); borde
 }
 .nav-toggle:hover { background: var(--green); color: #0a0a0a; }
 @media (max-width: 900px) {
-  .nav-toggle { display: inline-block; }
+  .nav-toggle { display: inline-block; margin-left: auto; }
   .version { display: none; }
   .nav-links {
     display: none; position: absolute; top: var(--nav-h); left: 0; right: 0;
@@ -152,9 +152,9 @@ code { font-size: .88em; padding: .05em .35em; background: var(--panel-2); borde
 .stat:last-child { border-right: 0; }
 .stat .fig { display: block; color: var(--green); font-size: 1.5rem; font-weight: 700; line-height: 1.2; }
 .stat .cap { display: block; color: var(--muted); font-size: .8rem; margin: .35rem 0 .9rem; }
-.stat .bar { height: 4px; background: var(--panel-2); border: 1px solid var(--line-soft); }
+.stat .bar { display: block; height: 4px; background: var(--panel-2); border: 1px solid var(--line-soft); }
 .stat .bar i { display: block; height: 100%; background: var(--green); }
-@media (max-width: 900px) { .stats { grid-template-columns: repeat(2, 1fr); } .stat:nth-child(2n) { border-right: 0; } .stat { border-bottom: 1px solid var(--line-soft); } }
+@media (max-width: 900px) { .stats { grid-template-columns: repeat(2, 1fr); } .stat:nth-child(2n) { border-right: 0; } .stat { border-bottom: 1px solid var(--line-soft); } .stat:last-child { grid-column: 1 / -1; border-right: 0; } }
 @media (max-width: 520px) { .stats { grid-template-columns: 1fr; } .stat { border-right: 0; } }
 
 /* ---------- Sections ---------- */
@@ -295,6 +295,9 @@ code { font-size: .88em; padding: .05em .35em; background: var(--panel-2); borde
 .prose p, .prose li { color: var(--muted); }
 .prose p strong, .prose li strong { color: var(--text); }
 .prose a { color: var(--green); }
+/* Solid buttons inside .prose need dark text: .prose a outranks .btn--solid/.button.primary */
+.prose a.btn--solid, .prose a.button.primary { color: #0a0a0a; }
+.prose a.btn--solid:hover, .prose a.button.primary:hover { color: #0a0a0a; }
 .meta-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .88rem; }
 .meta-table th, .meta-table td { padding: .7rem .9rem .7rem 0; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line-soft); }
 .meta-table th { color: var(--muted); font-weight: 400; width: 8rem; }
@@ -415,6 +418,8 @@ ul.alt li { padding: .6rem 0; border-bottom: 1px solid var(--line-soft); margin:
 }
 @media (max-width: 640px) {
   body { font-size: .92rem; }
+  .hero-name { font-size: clamp(1.85rem, 8vw, 2.4rem); }
+  .term-bar-bottom input { font-size: 16px; }
   .workflow-cards { grid-template-columns: 1fr; }
   .edu article, .credential-card { grid-template-columns: 1fr; }
   .edu .doc, .credential-card .credential-image { max-width: 13rem; }
