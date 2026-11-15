@@ -53,7 +53,7 @@
 							</div>
 							<figure class="headshot">
 								<span class="frame-label">view ./headshot</span>
-								<img src="images/headshot.jpg" alt="Jamiah McQuiller" width="630" height="800" />
+								<img src="images/headshot.jpg" alt="Jamiah McQuiller" width="630" height="800" fetchpriority="high" decoding="async" />
 								<figcaption><b># CompTIA Security+</b> &middot; Certified</figcaption>
 							</figure>
 						</div>
@@ -77,12 +77,13 @@
 						<h2 id="projects-title" class="visually-hidden">Featured Projects</h2>
 						<p class="section-prompt"><span class="prompt">$</span> ls ./work <span class="dim"># Featured Projects</span></p>
 						<ul class="filters" role="group" aria-label="Filter projects">
-							<li><button class="filter-btn is-active" type="button" data-filter="all">all</button></li>
-							<li><button class="filter-btn" type="button" data-filter="case-study">case study</button></li>
-							<li><button class="filter-btn" type="button" data-filter="documentation">documentation</button></li>
-							<li><button class="filter-btn" type="button" data-filter="application">application</button></li>
-							<li><button class="filter-btn" type="button" data-filter="security-lab">security lab</button></li>
+							<li><button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">all</button></li>
+							<li><button class="filter-btn" type="button" data-filter="case-study" aria-pressed="false">case study</button></li>
+							<li><button class="filter-btn" type="button" data-filter="documentation" aria-pressed="false">documentation</button></li>
+							<li><button class="filter-btn" type="button" data-filter="application" aria-pressed="false">application</button></li>
+							<li><button class="filter-btn" type="button" data-filter="security-lab" aria-pressed="false">security lab</button></li>
 						</ul>
+						<p class="filter-status"><span class="count" id="filter-count" aria-live="polite">Showing 7 of 7 projects</span><button class="filter-reset" type="button" id="filter-reset" hidden>reset &times;</button></p>
 						<ul class="project-list">
 							<li class="project" data-category="case-study">
 								<span class="pid">drwx 01</span>
@@ -124,7 +125,7 @@
 									<h3>CryptKey &mdash; MFA Application <span class="tag">./application</span></h3>
 									<p>A Python and Flask app exploring TOTP, QR-code scanning, and multi-factor authentication.</p>
 									<p class="tech"><b>tech:</b> Python, Flask, TOTP, QR codes</p>
-									<a class="thumb" href="projects/cryptkey-mfa-application.html" tabindex="-1" aria-hidden="true"><img src="images/cryptkey-logo.png" alt="" /></a>
+									<a class="thumb" href="projects/cryptkey-mfa-application.html" tabindex="-1" aria-hidden="true"><img src="images/cryptkey-logo.png" alt="" width="324" height="151" loading="lazy" decoding="async" /></a>
 								</div>
 								<a class="explore" href="projects/cryptkey-mfa-application.html">explore &rarr;</a>
 							</li>
@@ -143,7 +144,7 @@
 									<h3>TRACE &mdash; Crime Awareness &amp; Public Safety <span class="tag">./application</span></h3>
 									<p>A user-centered app concept for exploring public-safety information.</p>
 									<p class="tech"><b>tech:</b> Figma</p>
-									<a class="thumb" href="projects/trace-app.html" tabindex="-1" aria-hidden="true"><img src="images/trace-logo.png" alt="" /></a>
+									<a class="thumb" href="projects/trace-app.html" tabindex="-1" aria-hidden="true"><img src="images/trace-logo.png" alt="" width="1254" height="1254" loading="lazy" decoding="async" /></a>
 								</div>
 								<a class="explore" href="projects/trace-app.html">explore &rarr;</a>
 							</li>
@@ -327,9 +328,9 @@
 	</footer>
 
 	<!-- Terminal output panel -->
-	<div class="term-output" id="term-output" aria-live="polite">
+	<div class="term-output" id="term-output" aria-live="polite" aria-hidden="true" aria-label="Terminal output">
 		<div class="term-output-inner">
-			<div class="out-head"><span>jamiah@portfolio:~ &mdash; output</span><button type="button" id="term-close">close</button></div>
+			<div class="out-head"><span class="out-title" title="Collapse / expand output">jamiah@portfolio:~ &mdash; output</span><span class="out-actions"><button type="button" id="term-collapse" aria-expanded="true" aria-controls="term-output-body">collapse</button><button type="button" id="term-close">close</button></span></div>
 			<div id="term-output-body"></div>
 		</div>
 	</div>
@@ -337,7 +338,7 @@
 	<!-- Fixed bottom terminal bar -->
 	<div class="term-bar-bottom">
 		<div class="wrap">
-			<span class="prompt">jamiah@portfolio:~$</span>
+			<span class="prompt prompt-long">jamiah@portfolio:~$</span><span class="prompt prompt-short" aria-hidden="true">$</span>
 			<label class="visually-hidden" for="term-input">Terminal command</label>
 			<input id="term-input" type="text" placeholder="type help" autocomplete="off" spellcheck="false" />
 			<div class="term-cmds" role="group" aria-label="Quick commands">
