@@ -537,12 +537,14 @@
         <a href="#index">Browse the index →</a>
       </section>
 
-      <section class="side-index">
-        <h3>Colophon</h3>
+      <section class="side-index" id="skills">
+        <h3>Skills</h3>
         <ul>
-          <li><b>Set in</b>Playfair Display, with handwritten lettering throughout — no sans was harmed.</li>
-          <li><b>Photography</b>Black &amp; white only. Images here are editorial placeholders for the layout, to be replaced with her own.</li>
-          <li><b>Printed in</b>Flint, Michigan. Population: one portfolio, kept current.</li>
+          <li><b>Endpoint &amp; Patch</b>ManageEngine Endpoint Central — vulnerability &amp; patch management across 1,392 endpoints.</li>
+          <li><b>Security Platforms</b>CrowdStrike · Okta · Zscaler · Barracuda · Cymulate · pfSense.</li>
+          <li><b>Scanning &amp; Network</b>Wireshark · Nmap · Masscan · OpenVAS · Snort · iptables.</li>
+          <li><b>GRC &amp; Compliance</b>CIS Controls · risk assessments · HIPAA / CJIS audit prep.</li>
+          <li><b>Scripting &amp; Systems</b>Python · PowerShell · Flask · Microsoft 365 · ServiceNow · Google Cloud.</li>
         </ul>
       </section>
     </aside>
@@ -663,6 +665,8 @@
   if(contactH) addEntry('Contact — Jamiah McQuiller', 'Email jamiah_mcq@yahoo.com · LinkedIn · GitHub · Flint, Michigan.', 'Contact', document.getElementById('contact'));
   var bb = document.querySelector('.black-block');
   if(bb) addEntry('Offline Theory — The Journal', 'The Journal · Vol. 001. Read the journal.', 'Writing', bb);
+  var skillsEl = document.getElementById('skills');
+  if(skillsEl) addEntry('Skills', clean(skillsEl.querySelector('ul') && skillsEl.querySelector('ul').textContent), 'Skills', skillsEl);
   var currentMatches = [];
   function jumpTo(entry){
     if(!entry) return;
