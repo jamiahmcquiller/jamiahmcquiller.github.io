@@ -56,8 +56,8 @@
   .hero figure img{width:100%;aspect-ratio:3/3.85;object-fit:cover;object-position:center 22%}
   .hero figcaption,.caption{font-family:var(--sans);font-size:8.5px;letter-spacing:.08em;color:var(--gray-light);text-transform:uppercase;margin-top:8px;line-height:1.6}
   .hero-text{padding-bottom:10px;container-type:inline-size}
-  .hero-text h1{font-family:var(--serif);font-weight:500;font-size:clamp(30px,3.4vw,44px);font-size:8.65cqw;white-space:nowrap;line-height:1.02;letter-spacing:.015em;text-transform:uppercase;margin:0 0 10px}
-  .hero-text h1 em{font-weight:600}
+  .hero-text h1{font-family:var(--serif);font-style:normal;font-weight:500;font-size:clamp(30px,3.4vw,44px);font-size:8.65cqw;white-space:nowrap;line-height:1.02;letter-spacing:.015em;text-transform:uppercase;margin:0 0 10px}
+  .hero-text h1 em{font-style:normal;font-weight:500}
   .byline{font-size:11.5px;line-height:1.55;color:var(--ink-soft)}
   .byline i{font-family:var(--serif)}
   .byline b{font-family:var(--sans);font-weight:600;font-size:10px;letter-spacing:.06em;text-transform:uppercase}
@@ -130,10 +130,10 @@
   /* ---------- RIGHT SIDEBAR : vertical navigation ---------- */
   .side-nav{display:flex;flex-direction:column}
   .side-nav a{font-family:var(--serif);text-transform:uppercase;text-decoration:none;font-size:41px;line-height:.98;letter-spacing:.005em;padding:1px 0;min-height:44px;display:flex;align-items:center;color:var(--ink)}
-  .side-nav a:nth-child(odd){font-style:italic;font-weight:500}
+  .side-nav a:nth-child(odd){font-style:normal;font-weight:500}
   .side-nav a:nth-child(even){font-weight:500}
-  .side-nav a:hover{font-style:italic;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
-  .side-nav a.active{font-style:italic}
+  .side-nav a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+  .side-nav a.active{font-style:normal}
   .side-nav a.active::after{content:"—";font-size:20px;margin-left:10px}
   .side-social{display:flex;align-items:center;gap:10px;margin-top:20px;font-family:var(--serif);font-style:italic;font-size:10.5px;letter-spacing:.04em;flex-wrap:wrap}
   .side-social .glyph{font-family:var(--sans);font-style:normal;font-weight:700;font-size:12px}
@@ -299,7 +299,7 @@
             <figcaption>Cover story — the profile. Headshot of Jamiah McQuiller, in black &amp; white.</figcaption>
           </figure>
           <div class="hero-text">
-            <h1>Behind the <em>systems</em></h1>
+            <h1>Behind the systems</h1>
             <p class="byline"><i>By</i> <b>Way of Flint, Michigan</b><br><i>Photography</i> <b>In black &amp; white</b></p>
             <div class="thick-rule" aria-hidden="true"></div>
             <p class="deck">A portrait of a cybersecurity professional as an endpoint defender: vulnerability and patch management across some 1,392 endpoints in Genesee County, and the quiet, methodical work of taking identified vulnerabilities from roughly 1,050 down to 105.</p>
