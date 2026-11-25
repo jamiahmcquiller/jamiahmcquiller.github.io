@@ -148,6 +148,10 @@
   .index-title small{display:block;font-family:var(--body-serif);font-size:11.5px;color:#666;margin-top:3px;line-height:1.55}
   .index-meta{font-family:var(--sans);font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gray);text-align:right;white-space:nowrap;line-height:1.7}
   .index-row[hidden]{display:none}
+  .index-title a.index-main-link{color:inherit;text-decoration:none}
+  .index-title a.index-main-link:hover{text-decoration:underline;text-underline-offset:3px}
+  .index-sub-link{display:inline-block;margin-top:7px;font-family:var(--serif);font-style:italic;font-size:13.5px;font-weight:500;line-height:1.3;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);padding:2px 0;min-height:26px}
+  .index-sub-link:hover{opacity:.6}
   .index-row--feature{align-items:start}
   .index-main{display:block;min-width:0}
   .index-figure{margin:12px 0 4px}
@@ -302,6 +306,7 @@
     .index-no{font-size:6px}
     .index-title{font-size:10px}
     .index-title small{font-size:7px;margin-top:2px}
+    .index-sub-link{font-size:8px;margin-top:4px;min-height:18px;padding:1px 0}
     .index-meta{font-size:6px}
     .index-figure{margin:6px 0 2px}
     .index-figure figcaption{font-size:6px;margin-top:4px}
@@ -507,11 +512,11 @@
             <span class="index-title">TRACE — Crime Awareness &amp; Public Safety<small>A safety app prototype (Figma Prototype-4a) in usability validation — check crime in your area and stay aware.</small></span>
             <span class="index-meta">Building<br>Prototype</span>
           </a>
-          <a class="index-row" data-cat="writing" href="https://offlinetheory.github.io/" target="_blank" rel="noopener">
+          <div class="index-row" data-cat="writing">
             <span class="index-no">No. 08</span>
-            <span class="index-title">Offline Theory — The Journal<small>Long-form security writing and field guides, set like a print magazine that never went online.</small></span>
+            <span class="index-title"><a class="index-main-link" href="https://offlinetheory.github.io/" target="_blank" rel="noopener">Offline Theory — The Journal</a><small>Long-form security writing and field guides, set like a print magazine that never went online.</small><a class="index-sub-link" href="https://offlinetheory.github.io/threat-map/" target="_blank" rel="noopener">Global Threat Watch — Live Threat Map</a></span>
             <span class="index-meta">Writing<br>Publication</span>
-          </a>
+          </div>
 
         </div>
       </section>
